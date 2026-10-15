@@ -1,0 +1,207 @@
+/* Wrapping rows that centre an incomplete last row, plus device breakpoints. Loaded last. */
+:root {
+  --gap: 24px;
+}
+
+img,
+video,
+iframe {
+  max-width: 100%;
+}
+
+/* Cards in two columns (featured and Netlify projects) */
+.project .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gap);
+}
+
+.project .boxes .box,
+#projects .boxes .box:last-child {
+  flex: 0 1 calc((100% - var(--gap)) / 2);
+  width: auto;
+  max-width: calc((100% - var(--gap)) / 2);
+  margin: 0;
+}
+
+/* Skillset categories in two columns */
+.skillset {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px var(--gap);
+}
+
+.skillset > [class*="col-"] {
+  flex: 0 1 calc((100% - var(--gap)) / 2);
+  width: auto;
+  max-width: calc((100% - var(--gap)) / 2);
+}
+
+/* Coding profiles: three per row */
+.coding {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gap);
+}
+
+.coding .code {
+  flex: 0 1 calc((100% - 2 * var(--gap)) / 3);
+  max-width: calc((100% - 2 * var(--gap)) / 3);
+}
+
+/* Stats: five per row */
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.stat {
+  flex: 0 1 calc((100% - 80px) / 5);
+  min-width: 0;
+}
+
+/* Services, GitHub repositories and retrieved RAG chunks */
+.service-grid,
+.repo-grid,
+.rag-docs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-grid {
+  gap: 18px;
+}
+
+.service-card {
+  flex: 0 1 calc((100% - 54px) / 4);
+  min-width: 0;
+}
+
+.repo-grid {
+  gap: 18px;
+}
+
+.repo-card {
+  flex: 0 1 calc((100% - 36px) / 3);
+  min-width: 0;
+}
+
+.rag-docs {
+  gap: 10px;
+}
+
+.rag-doc {
+  flex: 0 1 calc((100% - 20px) / 3);
+  min-width: 0;
+}
+
+.repo-note {
+  flex: 1 1 100%;
+}
+
+/* Large desktop */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* Tablet and below */
+@media (max-width: 991.98px) {
+  .skillset > [class*="col-"] {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .coding .code {
+    flex-basis: calc((100% - var(--gap)) / 2);
+    max-width: calc((100% - var(--gap)) / 2);
+  }
+
+  .stat {
+    flex-basis: calc((100% - 40px) / 3);
+  }
+
+  .service-card {
+    flex-basis: calc((100% - 18px) / 2);
+  }
+
+  .repo-card {
+    flex-basis: calc((100% - 18px) / 2);
+  }
+
+  .rag-doc {
+    flex-basis: calc((100% - 10px) / 2);
+  }
+}
+
+/* Large phones */
+@media (max-width: 767.98px) {
+  :root {
+    --gap: 18px;
+  }
+
+  .project .boxes .box,
+  #projects .boxes .box:last-child {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Phones */
+@media (max-width: 575.98px) {
+  .coding .code {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .stats {
+    gap: 12px;
+  }
+
+  .stat {
+    flex-basis: calc((100% - 12px) / 2);
+  }
+
+  .service-card,
+  .repo-card,
+  .rag-doc {
+    flex-basis: 100%;
+  }
+
+  .ai-panel {
+    padding: 16px;
+  }
+
+  #jd-result {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pitch-fields {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .cta-btn {
+    justify-content: center;
+  }
+}
+
+/* Short landscape phones keep the preloader on screen */
+@media (max-height: 520px) {
+  .pl-photo {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 14px;
+  }
+
+  .pl-name {
+    font-size: 20px;
+  }
+}

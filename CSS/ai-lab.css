@@ -1,0 +1,665 @@
+/* Generative AI stack orbit */
+#ai-orbit,
+#rag-lab {
+  margin: 70px 0;
+}
+
+.orbit-wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 460px) minmax(0, 1fr);
+  align-items: center;
+  gap: 32px;
+  max-width: 980px;
+  margin: 24px auto 0;
+}
+
+.orbit {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.orbit-ring {
+  position: absolute;
+  inset: 12%;
+  border: 2px dashed rgba(255, 255, 255, 0.45);
+  border-radius: 50%;
+}
+
+.orbit-core {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 28%;
+  aspect-ratio: 1;
+  margin: -14% 0 0 -14%;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 800;
+  box-shadow: 0 0 30px var(--accent), 0 0 60px rgba(255, 255, 255, 0.25);
+}
+
+.orbit-core i {
+  font-size: 30px;
+}
+
+.orbit-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  width: 68px;
+  height: 68px;
+  margin: -34px 0 0 -34px;
+  padding: 0;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: rgba(5, 12, 20, 0.92);
+  color: #fff;
+  cursor: pointer;
+  transition: background 200ms ease, box-shadow 200ms ease;
+}
+
+.orbit-item i {
+  font-size: 20px;
+}
+
+.orbit-item span {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.orbit-item:hover,
+.orbit-item:focus-visible,
+.orbit-item.is-active {
+  background: var(--accent);
+  box-shadow: 0 0 20px #fff;
+  outline: none;
+}
+
+.orbit-detail {
+  padding: 22px;
+  border: 2px solid var(--accent);
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+.orbit-detail h4 {
+  margin: 0 0 8px;
+  font-weight: 800;
+}
+
+.orbit-detail p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* RAG pipeline demo */
+.rag-form {
+  display: flex;
+  gap: 12px;
+}
+
+.rag-form input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 14px;
+  border: 2px solid var(--accent);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+  user-select: text;
+}
+
+.rag-form input:focus {
+  outline: none;
+  border-color: #fff;
+}
+
+.rag-form .cta-btn {
+  flex-shrink: 0;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.rag-samples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.rag-chip {
+  padding: 4px 12px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background: transparent;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 200ms ease;
+}
+
+.rag-chip:hover,
+.rag-chip:focus-visible {
+  background: var(--accent);
+  outline: none;
+}
+
+.rag-flow {
+  display: flex;
+  align-items: center;
+  margin: 28px 0 14px;
+}
+
+.rag-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  width: 78px;
+  padding: 12px 4px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  transition: background 250ms ease, border-color 250ms ease, box-shadow 250ms ease;
+}
+
+.rag-node i {
+  font-size: 22px;
+}
+
+.rag-node.is-active {
+  border-color: #fff;
+  background: var(--accent);
+  box-shadow: 0 0 22px #fff;
+}
+
+.rag-node.is-done {
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.rag-link {
+  position: relative;
+  flex: 1;
+  min-width: 14px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.rag-dot {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  margin: -6px 0 0 -6px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 12px 3px var(--accent);
+  opacity: 0;
+}
+
+.rag-status {
+  min-height: 24px;
+  margin: 0 0 10px;
+  color: #cfd6df;
+  text-align: center;
+}
+
+.rag-docs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.rag-doc {
+  padding: 10px 12px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+  font-size: 13px;
+}
+
+.rag-doc strong {
+  display: block;
+  margin-bottom: 6px;
+  text-transform: capitalize;
+}
+
+.rag-doc .rag-bar {
+  display: block;
+  height: 5px;
+  margin-top: 8px;
+  overflow: hidden;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.rag-doc .rag-bar i {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #00ddff, #ff00d4);
+}
+
+.rag-answer {
+  margin-top: 16px;
+}
+
+@media (max-width: 767px) {
+  .orbit-wrap {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .orbit-item {
+    width: 56px;
+    height: 56px;
+    margin: -28px 0 0 -28px;
+  }
+
+  .orbit-item i {
+    font-size: 16px;
+  }
+
+  .orbit-item span {
+    font-size: 9px;
+  }
+
+  .orbit-core i {
+    font-size: 22px;
+  }
+
+  .rag-form {
+    flex-direction: column;
+  }
+
+  .rag-flow {
+    flex-direction: column;
+  }
+
+  .rag-node {
+    width: 140px;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .rag-link {
+    flex: none;
+    width: 2px;
+    height: 26px;
+    min-width: 0;
+  }
+
+  .rag-dot {
+    top: 0;
+    left: 50%;
+    margin: -6px 0 0 -6px;
+  }
+}
+
+/* Orbit spokes and satellites */
+.orbit-lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.orbit-lines line {
+  stroke: rgba(255, 255, 255, 0.22);
+  stroke-width: 1;
+  stroke-dasharray: 4 6;
+}
+
+.orbit-lines line.is-active {
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-dasharray: 8 6;
+  filter: drop-shadow(0 0 4px var(--accent));
+}
+
+.orbit-satellite {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  margin: -4px 0 0 -4px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 10px 3px var(--accent);
+  pointer-events: none;
+}
+
+#stack-orbit,
+#neural,
+#semantic {
+  margin: 70px 0;
+}
+
+/* Neural network */
+.nn-svg,
+.map-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.nn-edge {
+  stroke: rgba(255, 255, 255, 0.18);
+  stroke-width: 1;
+}
+
+.nn-pulse {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  opacity: 0;
+  filter: drop-shadow(0 0 4px var(--accent));
+}
+
+.nn-node {
+  fill: #0b1220;
+  stroke: #fff;
+  stroke-width: 2;
+  transition: fill 250ms ease, filter 250ms ease;
+}
+
+.nn-node.is-lit {
+  fill: var(--accent);
+  filter: drop-shadow(0 0 8px #fff);
+}
+
+.nn-node.is-top {
+  fill: #fff;
+}
+
+.nn-signal {
+  fill: #fff;
+  filter: drop-shadow(0 0 5px var(--accent));
+}
+
+.nn-caption {
+  fill: #cfd6df;
+  font-size: 13px;
+  text-anchor: middle;
+}
+
+.nn-percent {
+  fill: #fff;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.nn-actions {
+  justify-content: center;
+}
+
+/* Semantic skill map */
+.map-halo {
+  opacity: 0.08;
+}
+
+.map-cluster-title {
+  fill: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  opacity: 0.6;
+  text-anchor: middle;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.map-dot {
+  cursor: pointer;
+}
+
+.map-dot circle {
+  stroke: #fff;
+  stroke-width: 2;
+  transition: r 200ms ease;
+}
+
+.map-dot:hover circle,
+.map-dot:focus-visible circle {
+  r: 10;
+}
+
+.map-dot:focus-visible {
+  outline: none;
+}
+
+.map-dot text {
+  fill: #fff;
+  font-size: 11px;
+  text-anchor: middle;
+  pointer-events: none;
+}
+
+.map-link {
+  stroke: #fff;
+  stroke-width: 1.5;
+  filter: drop-shadow(0 0 3px var(--accent));
+}
+
+.map-star circle {
+  fill: #fff;
+  filter: drop-shadow(0 0 8px #fff);
+}
+
+.map-star .map-star-ring {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 3;
+}
+
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 18px;
+  margin-top: 10px;
+  color: #fff;
+  font-size: 13px;
+}
+
+.map-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.map-legend i {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+/* Particle constellation behind the page */
+#constellation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+@media (max-width: 575.98px) {
+  .nn-caption {
+    font-size: 16px;
+  }
+
+  .map-dot text {
+    font-size: 14px;
+  }
+
+  .map-cluster-title {
+    font-size: 16px;
+  }
+}
+
+/* Skillset boxes: skills orbit inside the same box */
+.skills.is-orbit {
+  position: relative;
+  display: block;
+  height: 400px;
+  min-height: 400px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.skills.is-orbit .skill-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 2px dashed rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.skills.is-orbit .skill-lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.skills.is-orbit .skill-lines line {
+  stroke: rgba(255, 255, 255, 0.2);
+  stroke-width: 1;
+  stroke-dasharray: 4 6;
+}
+
+.skills.is-orbit .skill-core {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 96px;
+  height: 96px;
+  margin: -48px 0 0 -48px;
+  padding: 6px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.1;
+  text-align: center;
+  box-shadow: 0 0 30px var(--accent), 0 0 50px rgba(255, 255, 255, 0.2);
+  pointer-events: none;
+}
+
+.skills.is-orbit .skill {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  width: 78px;
+  height: 78px;
+  min-height: 0;
+  margin: -39px 0 0 -39px;
+  padding: 4px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: rgba(5, 12, 20, 0.92);
+  text-align: center;
+  animation: none;
+  transition: background 200ms ease, box-shadow 200ms ease;
+}
+
+.skills.is-orbit .skill:hover {
+  background: var(--accent);
+  box-shadow: 0 0 20px #fff;
+  z-index: 2;
+}
+
+.skills.is-orbit .skill img,
+.skills.is-orbit .skill .skill-icon {
+  width: 26px;
+  height: 26px;
+  margin: 0;
+  object-fit: contain;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.skills.is-orbit .skill img.skill-img-bg {
+  padding: 2px;
+}
+
+.skills.is-orbit .skill p {
+  margin: 0;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1.1;
+  overflow-wrap: anywhere;
+  transform: none;
+}
+
+@media (max-width: 575.98px) {
+  .skills.is-orbit {
+    height: 340px;
+    min-height: 340px;
+    width: 100%;
+  }
+
+  .skills.is-orbit .skill {
+    width: 62px;
+    height: 62px;
+    margin: -31px 0 0 -31px;
+  }
+
+  .skills.is-orbit .skill img,
+  .skills.is-orbit .skill .skill-icon {
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .skills.is-orbit .skill p {
+    font-size: 8px;
+  }
+
+  .skills.is-orbit .skill-core {
+    width: 76px;
+    height: 76px;
+    margin: -38px 0 0 -38px;
+    font-size: 12px;
+  }
+}

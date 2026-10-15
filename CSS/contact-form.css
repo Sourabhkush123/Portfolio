@@ -1,0 +1,275 @@
+/* Contact form */
+.cf-card {
+  max-width: 820px;
+  margin: 0 auto;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.5);
+  text-align: left;
+}
+
+.cf-panel {
+  position: relative;
+  padding: 30px 28px;
+}
+
+.cf-honey {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.cf-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 18px;
+}
+
+.cf-wide {
+  grid-column: 1 / -1;
+}
+
+.cf-field {
+  display: block;
+  margin: 0;
+}
+
+.cf-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.cf-count {
+  color: #b6cbce;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.cf-input {
+  position: relative;
+  display: block;
+}
+
+.cf-input > i {
+  position: absolute;
+  top: 15px;
+  left: 14px;
+  color: var(--color-brand, #ffd93d);
+  font-size: 15px;
+  pointer-events: none;
+}
+
+.cf-card .cf-input input,
+.cf-card .cf-input select,
+.cf-card .cf-input textarea {
+  width: 100%;
+  margin: 0;
+  padding: 11px 14px 11px 40px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background: transparent;
+  color: #fff;
+  font-size: 17px;
+  cursor: text;
+  transition: border-color 250ms ease, box-shadow 250ms ease;
+  user-select: text;
+}
+
+.cf-card .cf-input select {
+  cursor: pointer;
+}
+
+.cf-card .cf-input select option {
+  background: #0b1220;
+  color: #fff;
+}
+
+.cf-card .cf-input textarea {
+  min-height: 130px;
+  padding-left: 14px;
+  resize: vertical;
+}
+
+.cf-card .cf-input input::placeholder,
+.cf-card .cf-input textarea::placeholder {
+  color: #c9d3d6;
+  opacity: 0.8;
+}
+
+.cf-card .cf-input input:focus,
+.cf-card .cf-input select:focus,
+.cf-card .cf-input textarea:focus {
+  outline: none;
+  border: 2px solid var(--color-brand, #ffd93d);
+  background: transparent;
+  box-shadow: 0 0 0 4px rgba(255, 217, 61, 0.18);
+  color: #fff;
+  font-size: 17px;
+}
+
+.cf-error {
+  display: block;
+  min-height: 18px;
+  margin-top: 4px;
+  color: #ff8a8a;
+  font-size: 13px;
+}
+
+.cf-field.has-error .cf-input input,
+.cf-field.has-error .cf-input textarea {
+  border-color: #ff6b6b;
+}
+
+.cf-card .cf-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 8px;
+  padding: 13px 24px;
+  border: 2px solid var(--color-brand, #ffd93d);
+  border-radius: 10px;
+  background: var(--color-brand, #ffd93d);
+  color: var(--color-base, #3c4eb6);
+  font-size: 18px;
+  font-weight: 700;
+  transition: background 300ms ease, transform 300ms ease, box-shadow 300ms ease;
+}
+
+.cf-card .cf-submit:hover:not(:disabled) {
+  background: var(--color-brand2, #f6fa70);
+  border-color: var(--color-brand2, #f6fa70);
+  box-shadow: 0 8px 22px rgba(255, 217, 61, 0.35);
+  transform: translateY(-2px);
+}
+
+.cf-card .cf-submit:focus {
+  outline: none;
+}
+
+.cf-card .cf-submit:disabled {
+  cursor: progress;
+  opacity: 0.85;
+}
+
+.cf-spinner {
+  display: none;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(60, 78, 182, 0.35);
+  border-top-color: var(--color-base, #3c4eb6);
+  border-radius: 50%;
+  animation: cf-spin 800ms linear infinite;
+}
+
+.cf-submit.is-loading .cf-spinner {
+  display: inline-block;
+}
+
+.cf-status {
+  min-height: 24px;
+  margin-top: 12px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.cf-status.error {
+  color: #ff8a8a;
+}
+
+.cf-status a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Success state */
+.cf-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.cf-success h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.cf-lead {
+  max-width: 480px;
+  color: #e8f1f5;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.cf-success .cf-submit {
+  width: auto;
+}
+
+.cf-check {
+  width: 96px;
+  height: 96px;
+}
+
+.cf-check circle {
+  fill: none;
+  stroke: var(--color-brand, #ffd93d);
+  stroke-width: 3;
+  stroke-dasharray: 151;
+  stroke-dashoffset: 151;
+}
+
+.cf-check path {
+  fill: none;
+  stroke: #fff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 4;
+  stroke-dasharray: 40;
+  stroke-dashoffset: 40;
+}
+
+.cf-success.show .cf-check circle {
+  animation: cf-draw 700ms ease forwards;
+}
+
+.cf-success.show .cf-check path {
+  animation: cf-draw 500ms ease 500ms forwards;
+}
+
+@keyframes cf-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes cf-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .cf-panel {
+    padding: 22px 16px;
+  }
+
+  .cf-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

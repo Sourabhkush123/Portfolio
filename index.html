@@ -1,0 +1,1778 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SOURABH KUSHWAHA JAVA - FULL STACK DEVELOPER</title>
+    <meta name="description" content="Sourabh Kushwaha - Full-Stack Java Developer with experience at HCLTech and Pankaj Sir Academy, building Spring Boot, React and Generative AI applications.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sourabh Kushwaha - Full-Stack Java Developer | Generative AI">
+    <meta property="og:description" content="Spring Boot, React, Python, RAG and Generative AI projects.">
+    <meta property="og:url" content="https://Sourabh-kushwaha-portfolio.netlify.app/">
+    <meta property="og:image" content="https://Sourabh-kushwaha-portfolio.netlify.app/Images/Sourabh%20.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="CSS/blue.css" id="colorcss">
+    <link rel="stylesheet" href="CSS/contact.css" id="contactform">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <link rel="stylesheet" href="CSS/animations.css">
+    <link rel="stylesheet" href="CSS/reveal.css">
+    <link rel="stylesheet" href="CSS/features.css">
+    <link rel="stylesheet" href="CSS/ai-lab.css">
+    <link rel="stylesheet" href="CSS/layout.css">
+    <link rel="stylesheet" href="CSS/contact-form.css">
+    <link rel="icon" href="Images/Sourabh .jpeg" type="image/x-icon">
+</head>
+<body oncontextmenu="return false">
+
+  <div id="scroll-progress"></div>
+
+  <div id="preloader" aria-hidden="true">
+    <div class="pl-inner">
+      <div class="pl-photo"><img src="Images/Sourabh .jpeg" alt=""></div>
+      <span class="pl-name">Sourabh KUSHWAHA</span>
+      <span class="pl-line"></span>
+      <p>Full-Stack &middot; Generative AI</p>
+      <div class="pl-progress" aria-hidden="true"><span id="pl-bar"></span></div>
+      <span id="pl-percent" class="pl-percent" aria-hidden="true">0%</span>
+      <button id="pl-skip" class="pl-skip" type="button">Skip intro</button>
+    </div>
+  </div>
+
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <button id="showcase-btn" class="dock-btn" type="button" aria-label="Play auto showcase" title="Auto showcase (for screen recording)">
+    <i class="fa-solid fa-play"></i>
+  </button>
+  <button id="cmdk-toggle" class="dock-btn" type="button" aria-label="Open smart search" title="Smart search (Ctrl+K)">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+  <div id="cmdk" hidden>
+    <div class="cmdk-box" role="dialog" aria-label="Smart search">
+      <input id="cmdk-input" type="text" placeholder="Search sections, projects, actions...  (Ctrl+K)" aria-label="Search">
+      <ul id="cmdk-list"></ul>
+    </div>
+  </div>
+  <button id="chat-toggle" class="dock-btn" type="button" aria-label="Open AI assistant" title="Ask my AI assistant">
+    <i class="fa-solid fa-robot"></i>
+  </button>
+  <div id="chat-panel" hidden>
+    <div class="chat-head">
+      <span><i class="fa-solid fa-robot"></i> Ask Sourabh's AI</span>
+      <button id="chat-close" type="button" aria-label="Close assistant"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div id="chat-messages" aria-live="polite"></div>
+    <div id="chat-chips"></div>
+    <form id="chat-form" autocomplete="off">
+      <input id="chat-input" type="text" placeholder="Ask about experience, projects, skills..." aria-label="Your question">
+      <button type="button" id="chat-mic" aria-label="Speak your question" title="Voice input"><i class="fa-solid fa-microphone"></i></button>
+      <button type="button" id="chat-speak" aria-label="Read answers aloud" title="Read answers aloud"><i class="fa-solid fa-volume-high"></i></button>
+      <button type="submit" aria-label="Send"><i class="fa-solid fa-paper-plane"></i></button>
+    </form>
+  </div>
+
+  <div class="scroll-button">
+    <a href="#top"><i class="fas fa-circle-up fa-beat"></i></a>
+  </div>
+
+  <video autoplay muted loop id="video-background">
+    <source src="BG Video/Space BG.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <canvas id="constellation" aria-hidden="true"></canvas>
+
+  <div id="video-content">
+
+    <div class="header-container">
+        <header>
+        <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+            <div class="container">
+                <a class="navbar-brand d-lg-none fon" href="#">Sourabh KUSHWAHA</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="hamburger-btn">
+                    <span class="hamburger-toggler-icon" id="hamburger-icon">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto mr-auto">
+                        <li class="nav-item mr-5">
+                            <a class="nav-link hd-txt" href="#top">About</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link hd-txt" href="#sklst">SkillSet</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link hd-txt" href="#experience">Experience</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link hd-txt" href="https://certification-Sourabh-kushwaha.netlify.app/" target="_blank">Certifications</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link hd-txt" href="#prjct">Projects</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link hd-txt" href="Skillset/SourabhResume (5).pdf" target="_blank">Resume</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link hd-txt" href="#cntct">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </header>
+    </div>
+
+    <section id="top"></section>
+    <br><br><br>
+
+    <main class="container">
+        <section id="about">
+            <div class="themeDiv">
+                <div></div><div></div><div></div>
+                <div></div><div></div><div></div>
+                <div><h2 class="abt">About Me</h2></div>
+                <div></div><div></div><div></div><div></div>
+                <div><button id="changeTheme">Change Theme</button></div>
+            </div>
+            <div class="container img-container1">
+              <div class="row justify-content-between align-items-center">
+                  <div class="col-md-3">
+                      <div class="circle">
+                          <img src="Images/Sourabh .png" alt="Sourabh Kushwaha" class="img-fluid profile-image">
+                      </div>
+                  </div>
+                  <div class="col-md-1"></div>
+                  <div class="col-md-8">
+                      <div class="text glowing-text">
+                        <div class="seesaw">
+                          <h1 class="name">
+                            Sourabh KUSHWAHA
+                          </h1>
+                        </div>
+                          <h3 data-text="FULLSTACK" class="designation1">FULLSTACK</h3>
+                          <h3 data-text="DEVELOPER" class="designation2">DEVELOPER</h3>
+                          <p class="typed-line"><span id="typed"></span></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+            <p style="text-align: justify;">
+                Full-Stack Java Developer and B.Tech graduate in Artificial Intelligence and Machine Learning,
+                <strong>with industry experience at HCLTech and Pankaj Sir Academy</strong>. Strong foundation in
+                object-oriented programming, data structures and algorithms, DBMS, and system design, with
+                hands-on experience building scalable, high-performance web applications. Skilled in Java, Spring
+                Boot, Spring MVC, Spring Data JPA, JDBC, MySQL, REST APIs, and microservices on the backend, and
+                HTML, CSS, JavaScript, Bootstrap, and React.js on the frontend. Worked as an Automation Engineer at
+                HCLTech on the LIMS/ESP project using TypeScript and WebdriverIO, and currently builds Generative AI
+                solutions at Pankaj Sir Academy using Python, RAG, and vector databases. Completed a Java Developer Internship
+                at Sharma Computer Academy, contributing to
+                HireSense, an AI-driven resume screening platform. Built real-world projects including GadgetHub
+                (e-commerce), BlogHub (blogging platform), and an Online Voting application. IBM-certified in Java
+                Fundamentals, with 500+ algorithmic problems solved across LeetCode, CodeChef, HackerRank, and
+                GeeksforGeeks, and 15+ first-place wins in coding and web development competitions. A quick,
+                adaptable learner who values clean code, debugging, and agile teamwork, and enjoys turning ideas
+                into reliable, user-centric software.
+            </p>
+            <div class="cta-row">
+                <a class="cta-btn" href="Skillset/SourabhResume (5).pdf" download>
+                    <i class="fa-solid fa-download"></i> Download Resume
+                </a>
+                <a class="cta-btn" href="#cntct"><i class="fa-solid fa-handshake"></i> Hire Me</a>
+                <a class="cta-btn" href="#ai-lab"><i class="fa-solid fa-wand-magic-sparkles"></i> AI Job Fit</a>
+                <a class="cta-btn" href="#" data-open-chat><i class="fa-solid fa-robot"></i> Ask My AI</a>
+                <a class="cta-btn" href="linkedin.com/in/sourabh-kushwaha-5807a725a/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </section>
+
+        <section class="stats" id="stats">
+            <div class="stat"><i class="fa-solid fa-building"></i><h3 data-count="2">0</h3><p>Companies Worked</p></div>
+            <div class="stat"><i class="fa-solid fa-code"></i><h3 data-count="500" data-suffix="+">0</h3><p>Problems Solved</p></div>
+            <div class="stat"><i class="fa-solid fa-trophy"></i><h3 data-count="15" data-suffix="x">0</h3><p>1st Place Wins</p></div>
+            <div class="stat"><i class="fa-solid fa-diagram-project"></i><h3 data-count="15" data-suffix="+">0</h3><p>Projects Built</p></div>
+            <div class="stat"><i class="fa-solid fa-graduation-cap"></i><h3 data-count="7.80" data-decimals="2">0</h3><p>B.Tech CGPA</p></div>
+        </section>
+
+        <section class="marquee" aria-label="Technologies I work with">
+            <p class="marquee-title">Technologies I work with</p>
+            <div class="marquee-viewport"><div class="marquee-track"></div></div>
+        </section>
+
+        <section id="experience">
+          <h2>Experience</h2>
+          <div class="timeline">
+            <div class="tl-item">
+              <span class="tl-dot"><i class="fa-solid fa-industry"></i></span>
+              <div class="tl-card">
+                <span class="tl-date">Currently Working</span>
+                <h4>Pankaj Sir Academy</h4>
+                <div class="tl-project">
+                  <h5>CRISP AI</h5>
+                  <p>Generative AI application built with Python, using Retrieval-Augmented Generation (RAG) over a vector database with a Streamlit interface.</p>
+                  <div class="tl-tags"><span>Python</span><span>Generative AI</span><span>RAG</span><span>Streamlit</span><span>Vector DB</span></div>
+                </div>
+                <div class="tl-project">
+                  <h5>Personal AI Manager</h5>
+                  <p>Generative AI application on the same stack, extended with an MCP service, a FastAPI backend, and an HTML, CSS, and JavaScript frontend.</p>
+                  <div class="tl-tags"><span>Python</span><span>Generative AI</span><span>RAG</span><span>Streamlit</span><span>Vector DB</span><span>MCP</span><span>FastAPI</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="tl-item">
+              <span class="tl-dot"><i class="fa-solid fa-building"></i></span>
+              <div class="tl-card">
+                <span class="tl-date">Intern Army</span>
+                <h4>Software Engineer &mdash; Intern Army</h4>
+                <div class="tl-project">
+                  <h5>LIMS / ESP</h5>
+                  <p>Worked as an Software Engineer on the LIMS/ESP project, automating UI and API testing with TypeScript, WebdriverIO, Axios, and Postman.</p>
+                  <div class="tl-tags"><span>TypeScript</span><span>WebdriverIO</span><span>Axios</span><span>Postman</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="tl-item">
+              <span class="tl-dot"><i class="fa-solid fa-laptop-code"></i></span>
+              <div class="tl-card">
+                <span class="tl-date">Aug 2025 &ndash; Oct 2025</span>
+                <h4>Java Developer Intern &mdash; Sharma Computer Academy</h4>
+                <p>Contributed to HireSense, an AI-driven resume screening platform. Developed and optimized backend services with Advanced Java and MySQL, designed business logic and data integration, improved API performance, and integrated AI modules using Servlets and JDBC.</p>
+                <div class="tl-tags"><span>Advanced Java</span><span>Servlets</span><span>JDBC</span><span>MySQL</span><span>AI Integration</span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="education">
+          <h2>Education &amp; Certification</h2>
+          <div class="timeline">
+            <div class="tl-item">
+              <span class="tl-dot"><i class="fa-solid fa-graduation-cap"></i></span>
+              <div class="tl-card">
+                <span class="tl-date">2022 &ndash; 2026</span>
+                <h4>B.Tech &mdash; Computer Science Engineer</h4>
+                <p>Technocrats Institute of Technology and Science, Bhopal, Madhya Pradesh. CGPA: 7.80/10.</p>
+              </div>
+            </div>
+            <div class="tl-item">
+              <span class="tl-dot"><i class="fa-solid fa-certificate"></i></span>
+              <div class="tl-card">
+                <span class="tl-date">Certification</span>
+                <h4>IBM Certified &mdash; Java Fundamentals</h4>
+                <p>Certified professional in Java fundamentals by IBM.</p>
+              </div>
+            </div>
+            <div class="tl-item">
+              <span class="tl-dot"><i class="fa-solid fa-award"></i></span>
+              <div class="tl-card">
+                <span class="tl-date">Certification</span>
+                <h4>ServiceNow Certified</h4>
+                <p>Earned a ServiceNow certification. View the certificate on GitHub.</p>
+                <a class="tl-link" href="https://github.com/Sourabh-1234/SERVICENOW-CERTIFICATE" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-github"></i> View Certificate
+                </a>
+              </div>
+            </div>
+            <div class="tl-item">
+              <span class="tl-dot"><i class="fa-solid fa-school"></i></span>
+              <div class="tl-card">
+                <span class="tl-date">2021 &ndash; 2022</span>
+                <h4>Senior Secondary (XII) &mdash; Science</h4>
+                <p>Saraswati Vidhya Mandir School, Bankhedi, Madhya Pradesh. 83.20%.</p>
+              </div>
+            </div>
+            <div class="tl-item">
+              <span class="tl-dot"><i class="fa-solid fa-school"></i></span>
+              <div class="tl-card">
+                <span class="tl-date">2019 &ndash; 2020</span>
+                <h4>Secondary (X)</h4>
+                <p>Saraswati Vidhya Mandir School, Bankhedi, Madhya Pradesh. 90.50%.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="project" id="featured">
+          <div class="content">
+                        <div class="title"><h2 style="font-size: 35px;">Featured Projects</h2></div>
+                        <div class="project-filters" role="group" aria-label="Filter featured projects">
+                            <button class="project-filter is-active" type="button" data-filter="all" aria-pressed="true">All work</button>
+                            <button class="project-filter" type="button" data-filter="ai" aria-pressed="false">Generative AI</button>
+                            <button class="project-filter" type="button" data-filter="fullstack" aria-pressed="false">Full-stack</button>
+                            <button class="project-filter" type="button" data-filter="automation" aria-pressed="false">Automation</button>
+                        </div>
+                        <p id="featured-project-status" class="project-filter-status" aria-live="polite">Showing all featured projects.</p>
+            <div class="boxes row">
+                            <div class="box col-md-5 col-11" data-project-category="ai">
+                                <div class="icon"><i class="fa-solid fa-brain"></i></div>
+                                <div class="topic">CRISP AI</div>
+                                <p class="txt2">Generative AI application developed at Pankaj Sir Academy, combining Python, retrieval-augmented generation, a vector database, and a Streamlit interface.</p>
+                                <div class="tech-stack"><p class="tools">Python</p><p class="tools">RAG</p><p class="tools">Vector DB</p><p class="tools">Streamlit</p></div>
+                                <span class="project-context">Pankaj Sir project</span>
+                            </div>
+                            <div class="box col-md-5 col-11" data-project-category="ai">
+                                <div class="icon"><i class="fa-solid fa-robot"></i></div>
+                                <div class="topic">Personal AI Manager</div>
+                                <p class="txt2">Generative AI application at Pankaj Sir Academy, extended with an MCP service, a FastAPI backend, and a custom HTML, CSS, and JavaScript interface.</p>
+                                <div class="tech-stack"><p class="tools">Python</p><p class="tools">RAG</p><p class="tools">MCP</p><p class="tools">FastAPI</p><p class="tools">Vector DB</p></div>
+                                <span class="project-context">Pankaj Sir Academy project</span>
+                            </div>
+                            <div class="box col-md-5 col-11" data-project-category="automation">
+                                <div class="icon"><i class="fa-solid fa-vial-circle-check"></i></div>
+                                <div class="topic">LIMS / ESP Test Automation</div>
+                                <p class="txt2">UI and API test automation delivered at HCLTech for the LIMS/ESP project using TypeScript, WebdriverIO, Axios, and Postman.</p>
+                                <div class="tech-stack"><p class="tools">TypeScript</p><p class="tools">WebdriverIO</p><p class="tools">Axios</p><p class="tools">Postman</p></div>
+                                <span class="project-context">HCLTech project</span>
+                            </div>
+                            <div class="box col-md-5 col-11" data-project-category="ai">
+                <div class="icon"><i class="fa-solid fa-user-tie"></i></div>
+                <div class="topic">HireSense</div>
+                <p class="txt2">AI-driven resume screening platform built during my internship. Backend services, business logic, and AI module integration with optimized API performance.</p>
+                <div class="tech-stack"><p class="tools">Advanced Java</p><p class="tools">Servlets</p><p class="tools">JDBC</p><p class="tools">MySQL</p></div>
+              </div>
+              <div class="box col-md-5 col-11" data-project-category="fullstack">
+                <div class="icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                <div class="topic">GadgetHub</div>
+                <p class="txt2">E-commerce application with secure payments, real-time order tracking, reviews, and personalized recommendations. Responsive and built for high traffic.</p>
+                <div class="tech-stack"><p class="tools">Java</p><p class="tools">JEE</p><p class="tools">JDBC</p><p class="tools">JSP</p><p class="tools">MySQL</p><p class="tools">Bootstrap</p></div>
+              </div>
+              <div class="box col-md-5 col-11" data-project-category="fullstack">
+                <div class="icon"><i class="fa-solid fa-blog"></i></div>
+                <div class="topic">BlogHub</div>
+                <p class="txt2">Full-stack blogging platform with user authentication, blog creation and management, a commenting system, and real-time content updates.</p>
+                <div class="tech-stack"><p class="tools">Spring Boot</p><p class="tools">Spring REST</p><p class="tools">MySQL</p><p class="tools">Bootstrap</p></div>
+              </div>
+              <div class="box col-md-5 col-11" data-project-category="fullstack">
+                <div class="icon"><i class="fa-solid fa-check-to-slot"></i></div>
+                <div class="topic">Online Voting Application</div>
+                <p class="txt2">Secure voter authentication, real-time vote casting and tracking, and transparent result generation, designed for high traffic.</p>
+                <div class="tech-stack"><p class="tools">Spring Boot</p><p class="tools">Spring Data JPA</p><p class="tools">REST API</p><p class="tools">MySQL</p></div>
+              </div>
+              <div class="box col-md-5 col-11" data-project-category="fullstack">
+                <div class="icon"><i class="fa-solid fa-bag-shopping"></i></div>
+                <div class="topic">Swift Cart (E-commerce Application)</div>
+                <p class="txt2">Full-stack e-commerce application with a React frontend and a Spring Boot REST API backend, backed by MySQL.</p>
+                <div class="tech-stack"><p class="tools">Spring</p><p class="tools">Spring Boot</p><p class="tools">REST API</p><p class="tools">React</p><p class="tools">MySQL</p></div>
+              </div>
+              <div class="box col-md-5 col-11" data-project-category="fullstack">
+                <div class="icon"><i class="fa-solid fa-seedling"></i></div>
+                <div class="topic">Krishi Mandal (Farming Application)</div>
+                <p class="txt2">Farming application built with a React frontend and a Spring Boot REST API backend to support farmers.</p>
+                <div class="tech-stack"><p class="tools">Spring</p><p class="tools">Spring Boot</p><p class="tools">REST API</p><p class="tools">React</p></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="sklst"></section><br><br><br>
+
+        <section id="skillset">
+            <h2>Skillset</h2>
+            <br>
+                <div class="skillset row">
+                    <div class="col-lg-6 col-md-12">
+                        <p class="skillset-topic">Front-end Development</p>
+                        <div class="skills">                
+                            <div class="skill">
+                                <img src="Skillset/html.png" class="rounded-circle shadow">
+                                <p>HTML</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/css.png" class="rounded-circle shadow">
+                                <p>CSS</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/javascript.png" class="rounded-circle shadow">
+                                <p>Javascript</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/typescript.png" class="rounded-circle shadow">
+                                <p>TypeScript</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/reactjs.png" class="rounded-circle shadow">
+                                <p>React.js</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/bootstrap.png" class="rounded-circle shadow">
+                                <p>Bootstrap</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <p class="skillset-topic">Back-end Development</p>
+                        <div class="skills">
+                            <div class="skill">
+                                <img src="Skillset/jdbc1.png" class="rounded-circle shadow">
+                                <p>JDBC</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/jee.png" class="rounded-circle shadow">
+                                <p>JEE</p>
+                            </div>  
+                            <div class="skill">
+                                <img src="Skillset/servlet.png"class="rounded-circle shadow">
+                                <p>Servlet</p>
+                            </div> 
+                            <div class="skill">
+                                <img src="Skillset/jsp.png" class="rounded-circle shadow">
+                                <p>JSP</p>
+                            </div> 
+                            <div class="skill">
+                                <img src="Skillset/sessiontracking.png"class="rounded-circle shadow">
+                                <p>Session Tracking</p>
+                            </div> 
+                            <div class="skill">
+                                <img src="Skillset/cookies.png" class="rounded-circle shadow">
+                                <p>Cookies</p>
+                            </div>   
+                                                    
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <p class="skillset-topic">Programming Languages</p>
+                        <div class="skills">
+                            <div class="skill">
+                                <img src="Skillset/c.png"class="rounded-circle shadow">
+                                <p>C</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/c++.png"class="rounded-circle shadow">
+                                <p>C++</p>
+                            </div>
+                            <div class="skill">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" class="rounded-circle skill-img-bg" alt="">
+                                <p>C#</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/javascript.png"class="rounded-circle shadow">
+                                <p>Javascript</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/java.png" class="rounded-circle shadow">
+                                <p>Java</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/python.png" class="rounded-circle shadow">
+                                <p>Python</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/autoit.png" class="rounded-circle shadow">
+                                <p>AutoIt</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/sql.png" class="rounded-circle shadow">
+                                <p>SQL</p>
+                            </div>
+                            <div class="skill">
+                                <i class="fa-solid fa-robot skill-icon"></i>
+                                <p>Generative AI</p>
+                            </div>
+                        </div>
+                    </div>
+
+                          <div class="col-lg-6 col-md-12">
+                        <p class="skillset-topic">Frameworks</p>
+                        <div class="skills">
+                            <div class="skill">
+                                <img src="Skillset/bootstrap.png" class="rounded-circle shadow">
+                                <p>Bootstrap</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/reactjs.png" class="rounded-circle shadow">
+                                <p>React.js</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/spring.png" class="rounded-circle shadow">
+                                <p>Spring</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/microservices.png" class="rounded-circle shadow">
+                                <p>Microservices</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/testng.png" class="rounded-circle shadow">
+                                <p>TestNG</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/junit.png" class="rounded-circle shadow">
+                                <p>JUnit</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/cucumber.png" class="rounded-circle shadow">
+                                <p>Cucumber</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <p class="skillset-topic">Technical Subjects</p>
+                        <div class="skills">
+                            <div class="skill">
+                                <img src="Skillset/dsa.png" class="rounded-circle shadow">
+                                <p>DSA</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/oops.png" class="rounded-circle shadow">
+                                <p>OOPs</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/dbms.png" class="rounded-circle shadow">
+                                <p>DBMS</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/cloudcomputing.png" class="rounded-circle">
+                                <p>Cloud Computing</p>
+                            </div>
+                            
+                            <div class="skill">
+                                <img src="Skillset/os.png"class="rounded-circle ">
+                                <p>O.S.</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/computernetwork.png" class="rounded-circle shadow">
+                                <p>Computer Network</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <p class="skillset-topic">Tools & Technologies</p>
+                        <div class="skills">
+                            <div class="skill">
+                                <img src="Skillset/git.png" class="rounded-circle shadow">
+                                <p>Git</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/github.png" class="rounded-circle shadow">
+                                <p>GitHub</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/postman.png" class="rounded-circle shadow">
+                                <p>Postman</p>
+                            </div>
+                            <div class="skill">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/maven/maven-original.svg" class="rounded-circle skill-img-bg" alt="">
+                                <p>Maven</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                     <div class="col-lg-6 col-md-12">
+                        <p class="skillset-topic">Integrated Development Environment</p>
+                        <div class="skills">
+                            <div class="skill">
+                                <img src="Skillset/intellijidea.png" class="rounded-circle shadow">
+                                <p>IntelliJ IDEA</p>
+                            </div>
+                             <div class="skill">
+                                <img src="Skillset/codeblock.png" class="rounded-circle shadow">
+                                <p>Code::Blocks</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/turbocpp.png" class="rounded-circle shadow">
+                                <p>Turbo C++</p>
+                            </div>
+                             <div class="skill">
+                                <img src="Skillset/sts.png" class="rounded-circle shadow">
+                                <p>STS</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/devcpp.png" class="rounded-circle shadow">
+                                <p>Dev-C++</p>
+                            </div>
+                           
+                            <div class="skill">
+                                <img src="Skillset/vs-code.webp" class="rounded-circle shadow">
+                                <p>VS Code</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/netbeans.png" class="rounded-circle shadow">
+                                <p>NetBeans</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/eclipse.png" class="rounded-circle shadow">
+                                <p>Eclipse</p>
+                            </div>
+                           
+                           
+                        </div>
+                    </div>
+
+                     <div class="col-lg-6 col-md-12">
+                        <p class="skillset-topic">Other Skills</p>
+                        <div class="skills">
+                            <div class="skill">
+                                <img src="Skillset/cicd.png"class="rounded-circle shadow" >
+                                <p>CI/CD</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/docker.png" class="rounded-circle shadow">
+                                <p>Docker</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/devops.png" class="rounded-circle shadow">
+                                <p>DevOps</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/systemdesign.png" class="rounded-circle shadow">
+                                <p>System Design</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/jenkins.png" class="rounded-circle shadow">
+                                <p>Jenkins</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/selenium.png" class="rounded-circle shadow">
+                                <p>Selenium</p>
+                            </div>
+                            <div class="skill">
+                                <i class="fa-solid fa-robot skill-icon"></i>
+                                <p>Generative AI</p>
+                            </div>
+                            <div class="skill">
+                                <i class="fa-solid fa-rotate skill-icon"></i>
+                                <p>Agile</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <p class="skillset-topic">Databases</p>
+                        <div class="skills">
+                            <div class="skill">
+                                <img src="Skillset/mysql.png" class="rounded-circle shadow">
+                                <p>MySQL</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/sql.png" class="rounded-circle shadow">
+                                <p>SQL</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/jdbc1.png" class="rounded-circle shadow">
+                                <p>JDBC</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <p class="skillset-topic">Spring Ecosystem & APIs</p>
+                        <div class="skills">
+                            <div class="skill">
+                                <img src="Skillset/spring.png" class="rounded-circle shadow">
+                                <p>Spring Core</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/spring.png" class="rounded-circle shadow">
+                                <p>Spring Boot</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/spring.png" class="rounded-circle shadow">
+                                <p>Spring MVC</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/spring.png" class="rounded-circle shadow">
+                                <p>Spring Data JPA</p>
+                            </div>
+                            <div class="skill">
+                                <i class="fa-solid fa-plug skill-icon"></i>
+                                <p>REST APIs</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <p class="skillset-topic">AI & Machine Learning</p>
+                        <div class="skills">
+                            <div class="skill">
+                                <i class="fa-solid fa-brain skill-icon"></i>
+                                <p>Artificial Intelligence</p>
+                            </div>
+                            <div class="skill">
+                                <i class="fa-solid fa-microchip skill-icon"></i>
+                                <p>Machine Learning</p>
+                            </div>
+                            <div class="skill">
+                                <i class="fa-solid fa-robot skill-icon"></i>
+                                <p>Generative AI</p>
+                            </div>
+                            <div class="skill">
+                                <i class="fa-solid fa-wand-magic-sparkles skill-icon"></i>
+                                <p>AI Integration</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <p class="skillset-topic">Generative AI Stack</p>
+                        <div class="skills">
+                            <div class="skill">
+                                <img src="Skillset/python.png" class="rounded-circle shadow">
+                                <p>Python</p>
+                            </div>
+                            <div class="skill">
+                                <i class="fa-solid fa-book-open skill-icon"></i>
+                                <p>RAG</p>
+                            </div>
+                            <div class="skill">
+                                <i class="fa-solid fa-database skill-icon"></i>
+                                <p>Vector DB</p>
+                            </div>
+                            <div class="skill">
+                                <i class="fa-solid fa-server skill-icon"></i>
+                                <p>MCP</p>
+                            </div>
+                            <div class="skill">
+                                <i class="fa-solid fa-bolt skill-icon"></i>
+                                <p>FastAPI</p>
+                            </div>
+                            <div class="skill">
+                                <i class="fa-solid fa-layer-group skill-icon"></i>
+                                <p>Streamlit</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <p class="skillset-topic">Test Automation</p>
+                        <div class="skills">
+                            <div class="skill">
+                                <img src="Skillset/typescript.png" class="rounded-circle shadow">
+                                <p>TypeScript</p>
+                            </div>
+                            <div class="skill">
+                                <i class="fa-solid fa-vial skill-icon"></i>
+                                <p>WebdriverIO</p>
+                            </div>
+                            <div class="skill">
+                                <i class="fa-solid fa-network-wired skill-icon"></i>
+                                <p>Axios</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/postman.png" class="rounded-circle shadow">
+                                <p>Postman</p>
+                            </div>
+                            <div class="skill">
+                                <img src="Skillset/selenium.png" class="rounded-circle shadow">
+                                <p>Selenium</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <p class="skillset-topic">Soft Skills</p>
+                        <div class="skills">
+                            <div class="skill">
+                                <i class="fa-solid fa-shuffle skill-icon"></i>
+                                <p>Adaptability</p>
+                            </div>
+                            <div class="skill">
+                                <i class="fa-solid fa-lightbulb skill-icon"></i>
+                                <p>Problem-Solving</p>
+                            </div>
+                            <div class="skill">
+                                <i class="fa-solid fa-people-group skill-icon"></i>
+                                <p>Teamwork</p>
+                            </div>
+                            <div class="skill">
+                                <i class="fa-solid fa-comments skill-icon"></i>
+                                <p>Communication</p>
+                            </div>
+                            <div class="skill">
+                                <i class="fa-solid fa-bug skill-icon"></i>
+                                <p>Debugging</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <h2>Achievements</h2><br>
+                <div class="achievement-container">
+                    <div class="achievements">
+                        <i class="fa fa-trophy"></i>
+                        <img src="Images/Achievements.jpg">
+                        <br>
+                        <p> 
+                            I Possess a robust history of consecutive victories in Technical competitions,
+                            secured 15x1st place titles and 5x2nd place finishes in Coding Events and
+                            Web Development Competitions conducted at Inter-College Symposiums.
+                        </p>
+                        <a href="#" target="_blank">
+                            <img src="Social/drive.webp" class="drive">
+                        </a>
+                    </div>
+                </div>
+                <br><br>
+                
+                <h2>Coding Proficiency</h2>
+                <div class="coding">
+                    <div class="code">
+                        <a href="#" target="_blank">
+                            <div class="code-logo">
+                                <img src="Coding Platforms/Logo/LeetCode.png" alt="LeetCode" class="code-img">
+                            </div>
+                            <h4 class="platform">LeetCode</h4>
+                            <img src="Coding Platforms/Profiles/LeetCode1.jpg" class="prof-img">
+                            <center>
+                                <p>â­â­</p>
+                                <p>650+ Problems Solved!</p>
+                                <p>150+ Streak</p>
+                            </center>
+                        </a>
+                    </div>
+                    <div class="code">
+                        <a href="#" target="_blank">
+                            <div class="code-logo">
+                                <img src="Coding Platforms/Logo/CodeChef.png" alt="CodeChef" class="code-img">
+                            </div>
+                            <h4 class="platform">CodeChef</h4>
+                            <img src="Coding Platforms/Profiles/CodeChef1.jpg" class="prof-img">
+                            <center>
+                                <p>â­</p>
+                                <p>Highest Rating - 1270</p>
+                                <p>1100+ Problems Solved!</p>
+                                <p>300+ Streak</p>
+                            </center>
+                        </a>
+                    </div>
+                    <div class="code">
+                        <a href="#" target="_blank">
+                            <div class="code-logo">
+                                <img src="Coding Platforms/Logo/GFG.png" alt="GFG" class="code-img" 
+                                style="padding-top: 14px;">
+                            </div>
+                            <h4 class="platform">GeeksforGeeks</h4>
+                            <img src="Coding Platforms/Profiles/GFG1.jpg" class="prof-img">
+                            <center>
+                                <p>University Rank 37ðŸ¥‡</p> 
+                                <p>350+ Problems Solved!</p>
+                                <p>90+ Streak</p>
+                            </center>
+                        </a> 
+                    </div>
+                </div>
+                <div class="coding">
+                    <div class="code">
+                        <a href="#" target="_blank">
+                            <div class="code-logo">
+                                <img src="Coding Platforms/Logo/HackerRank.png" alt="HackerRank" class="code-img" 
+                                style="padding-top: 14px;">
+                            </div>
+                            <h4 class="platform">HackerRank</h4>
+                            <img src="Coding Platforms/Profiles/Hackerrank.png" class="prof-img">
+                            <center>
+                                <p>Global Rank 443222ðŸ¥‡</p> 
+                                <p>150+ Problems Solved!</p>
+                                <p>10+ Streak</p>
+                            </center>
+                        </a> 
+                    </div>
+                     <div class="code">
+                        <a href="https://codeforces.com/profile/Sourabh_1234" target="_blank">
+                            <div class="code-logo">
+                                <img src="Coding Platforms/Logo/CodeForces.jpg" alt="CodeForces" class="code-img" 
+                                style="padding-top: 14px;">
+                            </div>
+                            <h4 class="platform">CodeForces</h4>
+                            <img src="Coding Platforms/Profiles/codeforces.png" class="prof-img">
+                            <center>
+                                <p>Starting my DSA journey ðŸš€</p>
+                                <p>Learning daily</p>
+                                <p>Improving step by step ðŸ’¯</p>
+                            </center>
+                        </a> 
+                    </div>
+                     <div class="code">
+                        <a href="https://www.naukri.com/code360/profile/951e5b45-4fc2-40a1-a65b-feefa762fa59" target="_blank">
+                            <div class="code-logo">
+                                <img src="Coding Platforms/Logo/CodingNinjas.png" alt="CodingNinjas" class="code-img" 
+                                style="padding-top: 14px;">
+                            </div>
+                            <h4 class="platform">CodingNinjas</h4>
+                            <img src="Coding Platforms/Profiles/codingninjas.png" class="prof-img">
+                            <center>
+                              <p>Starting my DSA journey ðŸš€</p>
+                              <p>Learning daily</p>
+                              <p>Improving step by step ðŸ’¯</p>
+                            </center>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+          <h2>What I Can Build For You</h2>
+          <p class="ai-sub">Pick an area to see the stack I use. Every card links to the contact form.</p>
+          <div class="service-grid">
+            <a class="service-card" href="#cntct">
+              <i class="fa-solid fa-brain"></i>
+              <h4>Generative AI Apps</h4>
+              <p>RAG pipelines over vector databases with Streamlit or FastAPI interfaces and MCP services.</p>
+              <span class="service-tags">Python &middot; RAG &middot; MCP &middot; FastAPI</span>
+            </a>
+            <a class="service-card" href="#cntct">
+              <i class="fa-solid fa-layer-group"></i>
+              <h4>Full-Stack Web Apps</h4>
+              <p>End-to-end applications with a React frontend, Spring Boot REST backend and MySQL.</p>
+              <span class="service-tags">React &middot; Spring Boot &middot; MySQL</span>
+            </a>
+            <a class="service-card" href="#cntct">
+              <i class="fa-solid fa-diagram-project"></i>
+              <h4>Backend APIs &amp; Microservices</h4>
+              <p>Clean REST APIs and service layers with Spring MVC, Spring Data JPA and JDBC.</p>
+              <span class="service-tags">Java &middot; Spring &middot; REST</span>
+            </a>
+            <a class="service-card" href="#cntct">
+              <i class="fa-solid fa-vial-circle-check"></i>
+              <h4>Test Automation</h4>
+              <p>UI and API test suites with WebdriverIO, Selenium, TestNG, Axios and Postman.</p>
+              <span class="service-tags">TypeScript &middot; WebdriverIO &middot; Postman</span>
+            </a>
+          </div>
+        </section>
+
+        <section id="github-feed">
+          <h2>Latest on GitHub</h2>
+          <p class="ai-sub">Live from my public repositories.</p>
+          <div id="repo-grid" class="repo-grid" aria-live="polite">
+            <p class="repo-note">Loading repositories...</p>
+          </div>
+          <div class="cta-row">
+            <a class="cta-btn" href="https://github.com/Sourabh-1234" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> View all on GitHub</a>
+          </div>
+        </section>
+
+        <section id="ai-orbit">
+          <h2>My Generative AI Stack</h2>
+          <p class="ai-sub">Hover to slow the orbit, then click a technology to see where I use it.</p>
+          <div class="orbit-wrap">
+            <div class="orbit" id="orbit">
+              <div class="orbit-ring" aria-hidden="true"></div>
+              <div class="orbit-core"><i class="fa-solid fa-brain"></i><span>GenAI</span></div>
+              <button class="orbit-item" type="button" aria-pressed="false" data-title="Python" data-desc="The main language behind my Generative AI applications at Pankaj Sir Academy."><i class="fa-brands fa-python"></i><span>Python</span></button>
+              <button class="orbit-item" type="button" aria-pressed="false" data-title="RAG" data-desc="Retrieval-Augmented Generation over a vector database in CRISP AI and Personal AI Manager."><i class="fa-solid fa-book-open"></i><span>RAG</span></button>
+              <button class="orbit-item" type="button" aria-pressed="false" data-title="Vector DB" data-desc="Stores document embeddings so the right context can be retrieved for each question."><i class="fa-solid fa-database"></i><span>Vector DB</span></button>
+              <button class="orbit-item" type="button" aria-pressed="false" data-title="FastAPI" data-desc="Backend framework for Personal AI Manager."><i class="fa-solid fa-bolt"></i><span>FastAPI</span></button>
+              <button class="orbit-item" type="button" aria-pressed="false" data-title="Streamlit" data-desc="Interactive interface used in CRISP AI and Personal AI Manager."><i class="fa-solid fa-chart-line"></i><span>Streamlit</span></button>
+              <button class="orbit-item" type="button" aria-pressed="false" data-title="MCP" data-desc="Model Context Protocol service that Personal AI Manager uses to connect the model to tools."><i class="fa-solid fa-plug"></i><span>MCP</span></button>
+              <button class="orbit-item" type="button" aria-pressed="false" data-title="LLM apps" data-desc="Large language model powered applications, the focus of my current work at Pankaj Sir Academy."><i class="fa-solid fa-comments"></i><span>LLMs</span></button>
+            </div>
+            <div class="orbit-detail" id="orbit-detail" aria-live="polite">
+              <h4>Select a technology</h4>
+              <p>Each item is part of the stack I use to build retrieval-based AI applications.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="stack-orbit">
+          <h2>My Full-Stack Orbit</h2>
+          <p class="ai-sub">The same idea for my application stack. It spins the other way, so try catching an item.</p>
+          <div class="orbit-wrap">
+            <div class="orbit" data-reverse="1" data-duration="44">
+              <div class="orbit-ring" aria-hidden="true"></div>
+              <div class="orbit-core"><i class="fa-brands fa-java"></i><span>Full-Stack</span></div>
+              <button class="orbit-item" type="button" aria-pressed="false" data-title="Spring Boot" data-desc="Backend framework behind BlogHub, Online Voting, Swift Cart and Krishi Mandal."><i class="fa-solid fa-leaf"></i><span>Spring</span></button>
+              <button class="orbit-item" type="button" aria-pressed="false" data-title="React" data-desc="Frontend library for Swift Cart and Krishi Mandal."><i class="fa-brands fa-react"></i><span>React</span></button>
+              <button class="orbit-item" type="button" aria-pressed="false" data-title="MySQL" data-desc="Relational database for GadgetHub, BlogHub, Online Voting and Swift Cart."><i class="fa-solid fa-database"></i><span>MySQL</span></button>
+              <button class="orbit-item" type="button" aria-pressed="false" data-title="REST APIs" data-desc="Service layers built with Spring MVC and Spring Data JPA."><i class="fa-solid fa-network-wired"></i><span>REST</span></button>
+              <button class="orbit-item" type="button" aria-pressed="false" data-title="Docker" data-desc="Containerization, listed in my tools and DevOps skills."><i class="fa-brands fa-docker"></i><span>Docker</span></button>
+              <button class="orbit-item" type="button" aria-pressed="false" data-title="Git &amp; GitHub" data-desc="Version control for every project, with the code on GitHub."><i class="fa-brands fa-git-alt"></i><span>Git</span></button>
+              <button class="orbit-item" type="button" aria-pressed="false" data-title="Test Automation" data-desc="WebdriverIO, Selenium, TestNG and Postman, used on the LIMS/ESP project at HCLTech."><i class="fa-solid fa-vial-circle-check"></i><span>Testing</span></button>
+              <button class="orbit-item" type="button" aria-pressed="false" data-title="Microservices" data-desc="Service-oriented architecture with Spring, part of my backend skillset."><i class="fa-solid fa-cubes"></i><span>Services</span></button>
+            </div>
+            <div class="orbit-detail" aria-live="polite">
+              <h4>Select a technology</h4>
+              <p>Each item is a tool I have used on real projects.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="neural">
+          <h2>Neural Network in Motion</h2>
+          <p class="ai-sub">My degree is in AI and Machine Learning. Fire a forward pass and watch the signal travel layer by layer. Weights are random, so this is an illustration only.</p>
+          <div class="ai-panel nn-panel">
+            <svg id="nn-svg" class="nn-svg" viewBox="0 0 800 340" role="img" aria-label="Animated neural network with four layers"></svg>
+            <div class="ai-actions nn-actions">
+              <button id="nn-fire" class="cta-btn" type="button"><i class="fa-solid fa-bolt"></i> Forward Pass</button>
+              <button id="nn-shuffle" class="cta-btn" type="button"><i class="fa-solid fa-shuffle"></i> Randomize Weights</button>
+            </div>
+            <p id="nn-status" class="rag-status" aria-live="polite">Press Forward Pass to send a signal through the network.</p>
+          </div>
+        </section>
+
+        <section id="semantic">
+          <h2>Semantic Skill Map</h2>
+          <p class="ai-sub">Related skills sit close together, like embeddings in a vector space. Search a skill and watch the query fly to its neighbours, or click any dot.</p>
+          <div class="ai-panel map-panel">
+            <form id="map-form" class="rag-form" autocomplete="off">
+              <input id="map-input" type="text" placeholder="Try: spring, rag, selenium, react..." aria-label="Search the skill map">
+              <button class="cta-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i> Find Neighbours</button>
+            </form>
+            <div class="rag-samples" aria-label="Sample searches">
+              <button type="button" class="rag-chip">rag</button>
+              <button type="button" class="rag-chip">spring</button>
+              <button type="button" class="rag-chip">selenium</button>
+              <button type="button" class="rag-chip">react</button>
+              <button type="button" class="rag-chip">mysql</button>
+            </div>
+            <svg id="map-svg" class="map-svg" viewBox="0 0 800 420" role="img" aria-label="Two-dimensional map of skills grouped by topic"></svg>
+            <div id="map-legend" class="map-legend" aria-hidden="true"></div>
+            <p id="map-status" class="rag-status" aria-live="polite">Pick a search above or click a dot.</p>
+          </div>
+        </section>
+
+        <section id="rag-lab">
+          <h2>RAG Pipeline Live Demo</h2>
+          <p class="ai-sub">Ask a question and watch it travel through a retrieval-augmented pipeline. This is an animated simulation over my portfolio facts, not a live language model.</p>
+          <div class="ai-panel rag-panel">
+            <form id="rag-form" class="rag-form" autocomplete="off">
+              <input id="rag-input" type="text" placeholder="Ask something about Sourabh..." aria-label="Question for the RAG demo">
+              <button id="rag-run" class="cta-btn" type="submit"><i class="fa-solid fa-play"></i> Run Pipeline</button>
+            </form>
+            <div class="rag-samples" aria-label="Sample questions">
+              <button type="button" class="rag-chip">How does he use RAG and vector databases?</button>
+              <button type="button" class="rag-chip">What does he do at Pankaj Sir Academy with MCP?</button>
+              <button type="button" class="rag-chip">What is his education and CGPA?</button>
+              <button type="button" class="rag-chip">Which test automation tools does he use?</button>
+            </div>
+            <div class="rag-flow" aria-hidden="true">
+              <div class="rag-node"><i class="fa-solid fa-comment-dots"></i><span>Question</span></div>
+              <div class="rag-link"><span class="rag-dot"></span></div>
+              <div class="rag-node"><i class="fa-solid fa-vector-square"></i><span>Embed</span></div>
+              <div class="rag-link"><span class="rag-dot"></span></div>
+              <div class="rag-node"><i class="fa-solid fa-database"></i><span>Vector DB</span></div>
+              <div class="rag-link"><span class="rag-dot"></span></div>
+              <div class="rag-node"><i class="fa-solid fa-layer-group"></i><span>Context</span></div>
+              <div class="rag-link"><span class="rag-dot"></span></div>
+              <div class="rag-node"><i class="fa-solid fa-wand-magic-sparkles"></i><span>LLM</span></div>
+            </div>
+            <p id="rag-status" class="rag-status" aria-live="polite">Pick a sample question or type your own, then run the pipeline.</p>
+            <div id="rag-docs" class="rag-docs"></div>
+            <div id="rag-answer" class="pitch-output rag-answer" hidden></div>
+          </div>
+        </section>
+
+        <section id="ai-lab">
+          <h2>AI Job Fit Analyzer</h2>
+          <p class="ai-sub">Paste a job description to see how well my skills match. Analysis runs entirely in your browser.</p>
+          <div class="ai-panel">
+            <textarea id="jd-input" rows="6" placeholder="Paste a job description here..." aria-label="Job description"></textarea>
+            <div class="ai-actions">
+              <button id="jd-analyze" class="cta-btn" type="button"><i class="fa-solid fa-wand-magic-sparkles"></i> Analyze Fit</button>
+              <button id="jd-sample" class="cta-btn" type="button"><i class="fa-solid fa-file-lines"></i> Try Sample</button>
+            </div>
+            <div id="jd-result" hidden>
+              <div class="jd-gauge">
+                <svg class="gauge" viewBox="0 0 120 120" aria-hidden="true">
+                  <circle class="gauge-bg" cx="60" cy="60" r="54"></circle>
+                  <circle class="gauge-fg" id="gauge-fg" cx="60" cy="60" r="54"></circle>
+                </svg>
+                <div class="gauge-value"><span id="gauge-num">0</span>%</div>
+              </div>
+              <div class="jd-details">
+                <h4 id="jd-verdict"></h4>
+                <div class="jd-label">Matching skills</div>
+                <div id="jd-matched" class="chips"></div>
+                <div class="jd-label">Skills to explore</div>
+                <div id="jd-gaps" class="chips"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ai-panel pitch-panel">
+            <h3 class="ai-h3"><i class="fa-solid fa-pen-nib"></i> AI Pitch Generator</h3>
+            <p class="ai-sub">Enter a company and role to get a tailored introduction. If you analyzed a job description above, its keywords are used.</p>
+            <div class="pitch-fields">
+              <input id="pitch-company" type="text" placeholder="Company (e.g. Acme Technologies)" aria-label="Company">
+              <input id="pitch-role" type="text" placeholder="Role (e.g. Java Backend Developer)" aria-label="Role">
+            </div>
+            <div class="ai-actions">
+              <button id="pitch-generate" class="cta-btn" type="button"><i class="fa-solid fa-bolt"></i> Generate Pitch</button>
+              <button id="pitch-copy" class="cta-btn" type="button" hidden><i class="fa-solid fa-copy"></i> Copy</button>
+            </div>
+            <div id="pitch-output" class="pitch-output" hidden></div>
+          </div>
+        </section>
+
+         <section id="faq">
+          <h2>Frequently Asked Questions</h2>
+          <div class="faq-list">
+            <details>
+              <summary>What is your current role?</summary>
+              <p>I am building Generative AI applications at Pankaj Sir Academy, namely CRISP AI and Personal AI Manager, using Python, RAG and vector databases.</p>
+            </details>
+            <details>
+              <summary>Which technologies do you work with?</summary>
+              <p>Java, Spring Boot, React, JavaScript, TypeScript, Python, MySQL, and automation tools such as WebdriverIO, Selenium and Postman. See the Skillset section for the full list.</p>
+            </details>
+            <details>
+              <summary>Do you have experience with AI?</summary>
+              <p>Yes. I hold a B.Tech in Computer Science Engineering, built an AI integration for HireSense during my internship, and work on RAG and MCP projects at Pankaj Sir Academy.</p>
+            </details>
+            <details>
+              <summary>How can I contact you?</summary>
+              <p>Use the Contact form, email sourabhkushwaha0701@gmail.com, or message me on LinkedIn. The footer has a one-click copy for the email address.</p>
+            </details>
+          </div>
+        </section>
+
+         <section id="prjct"></section>
+         <br><br><br>
+        
+        <section class="project" id="projects">
+          <div class="content">
+              <div class="title"><h2 style="font-size: 35px;">Projects</h2></div>
+              <div class="boxes row">
+
+                  <div class="box col-md-5 col-11" data-project-category="fullstack">
+                        <div class="icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="topic">Portfolio</div>
+                        <a href="#" target="_blank">
+                            <div class="prj-img-flw">
+                                <img class="project-img" src="Project Images/Portfolio.png" alt=".">
+                            </div>
+                        </a>
+                        <p class="txt2">
+                        ðŸš€ Crafting Digital Experiences with Passion
+                        ðŸŽ¨ Full-Stack Developer | Exploring the Art of Code
+                        ðŸ’¡ Turning Ideas into Interactive Web Realities âœ¨ 
+                          <br><br><br>
+                          <span class="tech-title">Tech Stack</span>
+                          <div class="tech-stack">
+                            <p class="tools">HTML</p>
+                            <p class="tools">CSS</p>
+                            <p class="tools">Javascript</p>
+                            <p class="tools">Bootstrap</p>
+                          </div>
+                        </p>
+                        <div class="box-icon">
+                            <a href="#" target="_blank">
+                                <img src="Social/Chrome.png" alt="Chrome">
+                         </a>
+                            <a href="#" target="_blank">
+                                <img src="Social/Github-B.png" alt="Github">
+                            </a>
+                        </div>
+                  </div>
+
+                  <div class="box col-md-5 col-11">
+                    <div class="icon">
+                        <i class="fa-solid fa-message"></i>
+                    </div>
+                    <div class="topic">Food Finder Recipe</div>
+                        <a href="#" target="_blank">
+                            <div class="prj-img-flw">
+                                <img class="project-img" src="Project Images/Food Finder Recipe.png" alt=".">
+                            </div>
+                        </a>
+                    <p class="txt2">
+                        ðŸ² Food Finder Recipe App | Connect, Cook, Create ðŸŒ
+                        ðŸ‘©â€ðŸ³ Discover Flavors, Share Recipes | Your Culinary Journey Starts Here ðŸŒŸ
+                        ðŸ“· Snap Dishes, Save Memories | Join the Recipe Revolution ðŸŒ
+                        ðŸ’¬ Share, Inspire, Explore | Your Kitchen, Your Voice, Your Community ðŸš€
+                        <br><br><br>
+                        <span class="tech-title">Tech Stack</span>
+                        <div class="tech-stack">
+                          <p class="tools">HTML</p>
+                          <p class="tools">CSS</p>
+                          <p class="tools">Javascript</p>
+                        </div>
+                    </p>
+                    <div class="box-icon">
+                        <a href="#" target="_blank">
+                            <img src="Social/Chrome.png" alt="Chrome">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="Social/Github-B.png" alt="Github">                        
+                        </a>
+                    </div>
+                </div>
+
+                <div class="box col-md-5 col-11">
+                    <div class="icon">
+                        <i class="fa-solid fa-plane"></i>
+                    </div>
+                    <div class="topic">The Flower Shop</div>
+                      <a href="#" target="_blank">
+                        <div class="prj-img-flw">
+                            <img class="project-img" src="Project Images/The Flower Shop.jpg" alt=".">
+                        </div>
+                  </a>
+                    <p class="txt2">
+                        ðŸŒ¸ The Flower Shop Application | Connect, Bloom, Delight ðŸŒ
+                        ðŸ’ Discover Beauty, Share Blossoms | Your Floral Journey Begins Here ðŸŒŸ
+                        ðŸ“· Capture Bouquets, Celebrate Moments | Join the Flower Movement ðŸŒ
+                        ðŸ’¬ Express, Inspire, Flourish | Your Garden, Your Story, Your App ðŸš€
+                        <br><br><br>
+                        <span class="tech-title">Tech Stack</span>
+                        <div class="tech-stack">
+                          <p class="tools">HTML</p>
+                          <p class="tools">CSS</p>
+                          <p class="tools">Bootstrap</p>
+                        </div>
+                    </p>
+                    <div class="box-icon">
+                        <a href="#" target="_blank">
+                            <img src="Social/Chrome.png" alt="Chrome">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="Social/Github-B.png" alt="Github">                        
+                        </a>
+                    </div>
+                </div>
+
+                <div class="box col-md-5 col-11">
+                    <div class="icon">
+                        <i class="fa-solid fa-bank"></i>
+                    </div>
+                    <div class="topic">JavaScript Quiz Application</div>
+                    <a href="https://quiz-application-rj.netlify.app/" target="_blank">
+                        <div class="prj-img-flw">
+                            <img class="project-img" src="Project Images/Quiz Application.png" alt=".">
+                        </div>
+                  </a>
+                    <p class="txt2">
+                        ðŸ§  Quiz Application | Connect, Compete, Conquer ðŸŒ
+                        ðŸŽ¯ Test Knowledge, Challenge Friends | Your Learning Adventure Starts Here ðŸŒŸ
+                        ðŸ“¸ Capture Scores, Celebrate Wins | Join the Quiz Craze ðŸŒ
+                        ðŸ’¬ Learn, Share, Grow | Your Mind, Your Rules, Your Arena ðŸš€
+                        <br><br><br>
+                        <span class="tech-title">Tech Stack</span>
+                        <div class="tech-stack">
+                          <p class="tools">HTML</p>
+                          <p class="tools">CSS</p>
+                          <p class="tools">Javascript</p>
+                        </div>
+                    </p>
+                    <div class="box-icon">
+                        <a href="https://quiz-application-rj.netlify.app/" target="_blank">
+                            <img src="Social/Chrome.png" alt="Chrome">
+                        </a>
+                        <a href="https://github.com/Sourabh-1234/quiz-application-rj" target="_blank">
+                            <img src="Social/Github-B.png" alt="Github">                        
+                        </a>
+                    </div>
+                </div>
+
+                <div class="box col-md-5 col-11">
+                    <div class="icon">
+                        <i class="fa fa-cloud-sun"></i>
+                    </div>
+                    <div class="topic">Tic Tac Toe</div>
+                    <a href="#" target="_blank">
+                        <div class="prj-img-flw">
+                            <img class="project-img" src="Project Images/Tic Tac Toe.jpg" alt=".">
+                        </div>
+                    </a>
+                    <p class="txt2">
+                        âŒâ­• Tic-Tac-Toe | Connect, Play, Win ðŸŒ
+                        ðŸŽ® Classic Fun, Modern Twist | Your Game Time Starts Now ðŸŒŸ
+                        ðŸ“¸ Mark Moves, Make Memories | Join the Strategy Showdown ðŸŒ
+                        ðŸ’¬ Think, Tap, Triumph | Your Mind, Your Moves, Your Victory ðŸš€
+                        <br><br><br>
+                        <span class="tech-title">Tech Stack</span>
+                        <div class="tech-stack">
+                          <p class="tools">HTML</p>
+                          <p class="tools">CSS</p>
+                          <p class="tools">Javascript</p>
+                        </div>
+                    </p>
+                    <div class="box-icon">
+                        <a href="#" target="_blank">
+                            <img src="Social/Chrome.png" alt="Chrome">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="Social/Github-B.png" alt="Github">                        
+                        </a>
+                    </div>
+                </div>
+
+                <div class="box col-md-5 col-11">
+                    <div class="icon">
+                        <i class="fa-solid fa-check-square"></i>
+                    </div>
+                    <div class="topic">Music Player Application</div>
+                      <a href="#" target="_blank">
+                        <div class="prj-img-flw">
+                            <img class="project-img" src="Project Images/Music Player.jpg" alt=".">
+                        </div>
+                  </a>
+                    <p class="txt2">
+                        ðŸŽµ Music Player Application | Connect, Listen, Feel ðŸŒ
+                        ðŸŽ§ Play Beats, Set Vibes | Your Sound Journey Begins Here ðŸŒŸ
+                        ðŸ“¸ Groove to Tunes, Capture Moods | Join the Rhythm Revolution ðŸŒ
+                        ðŸ’¬ Explore, Express, Elevate | Your Music, Your Mood, Your Stage ðŸš€
+                        <br><br><br>
+                        <span class="tech-title">Tech Stack</span>
+                        <div class="tech-stack">
+                          <p class="tools">HTML</p>
+                          <p class="tools">CSS</p>
+                          <p class="tools">Javascript</p>
+                        </div>
+                    </p>
+                    <div class="box-icon">
+                        <a href="#" target="_blank">
+                            <img src="Social/Chrome.png" alt="Chrome">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="Social/Github-B.png" alt="Github">                        
+                        </a>
+                    </div>
+                </div>
+
+                <div class="box col-md-5 col-11">
+                    <div class="icon">
+                        <i class="fa-solid fa-calculator"></i>
+                    </div>
+                    <div class="topic">Standard Calculator</div>
+                      <a href="#" target="_blank">
+                        <div class="prj-img-flw">
+                            <img class="project-img" src="Project Images/Standard Calculator.jpg" alt=".">
+                        </div>
+                  </a>
+                    <p class="txt2">
+                        ðŸ§® Standard Calculator Application | Connect, Calculate, Conquer ðŸŒ
+                        âž• Simplify Math, Amplify Accuracy | Your Smart Calculation Starts Here ðŸŒŸ
+                        ðŸ“¸ Solve Instantly, Save Time | Join the Number Revolution ðŸŒ
+                        ðŸ’¬ Tap, Solve, Succeed | Your Numbers, Your Logic, Your Tool ðŸš€
+                    <br><br><br>
+                    <span class="tech-title">Tech Stack</span>
+                    <div class="tech-stack">
+                      <p class="tools">HTML</p>
+                      <p class="tools">CSS</p>
+                      <p class="tools">Javascript</p>
+                    </div>
+                    </p>    
+                    <div class="box-icon">
+                        <a href="#" target="_blank">
+                            <img src="Social/Chrome.png" alt="Chrome">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="Social/Github-B.png" alt="Github">                        
+                        </a>
+                    </div>
+                </div>
+
+                <div class="box col-md-5 col-11">
+                    <div class="icon">
+                        <i class="fa-solid fa-thermometer-full"></i>
+                    </div>
+                    <div class="topic">Text To Speech Converter</div>
+                    <a href="#" target="_blank">
+                        <div class="prj-img-flw">
+                            <img class="project-img" src="Project Images/Text To Speech.jpg" alt=".">
+                        </div>
+                  </a>
+                    <p class="txt2">
+                        ðŸ—£ï¸ Text-to-Speech Converter Application | Connect, Speak, Empower ðŸŒ
+                        ðŸ“„ Type Words, Hear Voices | Your Voice Assistant Starts Here ðŸŒŸ
+                        ðŸŽ¤ Convert Text, Create Impact | Join the Voice Tech Revolution ðŸŒ
+                        ðŸ’¬ Read, Listen, Express | Your Words, Your Voice, Your Power ðŸš€
+                        <br><br><br>
+                        <span class="tech-title">Tech Stack</span>
+                        <div class="tech-stack">
+                          <p class="tools">HTML</p>
+                          <p class="tools">CSS</p>
+                          <p class="tools">Javascript</p>
+                        </div>
+                    </p>
+                    <div class="box-icon">
+                        <a href="#" target="_blank">
+                            <img src="Social/Chrome.png" alt="Chrome">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="Social/Github-B.png" alt="Github">                        
+                        </a>
+                    </div>
+                </div>
+
+                <div class="box col-md-5 col-11">
+                    <div class="icon">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <div class="topic">My Flexi Card</div>
+                    <a href="https://my-flexi-card-rj.netlify.app/" target="_blank">
+                        <div class="prj-img-flw">
+                            <img class="project-img" src="Project Images/My Flexi card.jpg" alt=".">
+                        </div>
+                    </a>
+                    <p class="txt2">
+                        ðŸ’³ My Flexi Card Application | Connect, Pay, Simplify ðŸŒ
+                        ðŸ“² Smart Wallet, Smarter Living | Your Digital Card Journey Starts Here ðŸŒŸ
+                        ðŸ“¸ Track Transactions, Control Finances | Join the Payment Evolution ðŸŒ
+                        ðŸ’¬ Swipe, Save, Succeed | Your Card, Your Control, Your Way ðŸš€
+                        <br><br><br>
+                        <span class="tech-title">Tech Stack</span>
+                        <div class="tech-stack">
+                          <p class="tools">HTML</p>
+                          <p class="tools">CSS</p>
+                        </div>
+                    </p>
+                    <div class="box-icon">
+                        <a href="#" target="_blank">
+                            <img src="Social/Chrome.png" alt="Chrome">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="Social/Github-B.png" alt="Github">
+                        </a>
+                    </div>
+                </div>
+<!-- 
+                <div class="box col-md-5 col-11">
+                    <div class="icon">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <div class="topic">TIT Website</div>
+                    <a href="https://tit-website.netlify.app/" target="_blank">
+                        <div class="prj-img-flw">
+                            <img class="project-img" src="Project Images/TIT.jpg" alt=".">
+                        </div>
+                    </a>
+                    <p class="txt2">
+                        ðŸ« Technocrats group of institution College Website | Connect, Learn, Excel ðŸŒ
+                        ðŸŽ“ Explore Courses, Embrace Opportunities | Your Academic Gateway Starts Here ðŸŒŸ
+                        ðŸ“¸ Discover Campus, Celebrate Achievements | Join the Education Evolution ðŸŒ
+                        ðŸ’¬ Inform, Inspire, Interact | Your College, Your Journey, Your Future ðŸš€
+                        <br><br><br>
+                        <span class="tech-title">Tech Stack</span>
+                        <div class="tech-stack">
+                          <p class="tools">HTML</p>
+                          <p class="tools">CSS</p>
+                        </div>
+                    </p>
+                    <div class="box-icon">
+                        <a href="https://tit-website.netlify.app/" target="_blank">
+                            <img src="Social/Chrome.png" alt="Chrome">
+                        </a>
+                        <a href="https://github.com/Sourabh-1234/TIT-Websit" target="_blank">
+                            <img src="Social/Github-B.png" alt="Github">
+                        </a>
+                    </div>
+                </div> -->
+
+                <!-- <div class="box col-md-5 col-11">
+                    <div class="icon">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <div class="topic">Login Page</div>
+                    <a href="https://login-page-js.netlify.app/" target="_blank">
+                        <div class="prj-img-flw">
+                            <img class="project-img" src="Project Images/Login Page.jpg" alt=".">
+                        </div>
+                    </a>
+                    <p class="txt2">
+                        ðŸ” Login Page Application | Connect, Access, Secure ðŸŒ
+                        ðŸ‘¤ Simple Entry, Strong Security | Your Digital Gateway Starts Here ðŸŒŸ
+                        ðŸ“² Enter Safely, Navigate Freely | Join the Access Revolution ðŸŒ
+                        ðŸ’¬ Authenticate, Authorize, Achieve | Your Identity, Your Control, Your World ðŸš€
+                        <br><br><br>
+                        <span class="tech-title">Tech Stack</span>
+                        <div class="tech-stack">
+                          <p class="tools">HTML</p>
+                          <p class="tools">CSS</p>
+                        </div>
+                    </p>
+                    <div class="box-icon">
+                        <a href="https://login-page-js.netlify.app/" target="_blank">
+                            <img src="Social/Chrome.png" alt="Chrome">
+                        </a>
+                        <a href="https://github.com/Sourabh-1234/form-validation-js" target="_blank">
+                            <img src="Social/Github-B.png" alt="Github">
+                        </a>
+                    </div>
+                </div>
+                 -->
+                <div class="box col-md-5 col-11">
+                    <div class="icon">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <div class="topic">Universe Solar System</div>
+                    <a href="https://universe-solar-system-main.netlify.app/" target="_blank">
+                        <div class="prj-img-flw">
+                            <img class="project-img" src="Project Images/Universal Solar System.jpg" alt=".">
+                        </div>
+                    </a>
+                    <p class="txt2">
+                        ðŸŒŒ Universe Solar System | Explore, Imagine, Discover ðŸŒ
+                        ðŸª Travel the Cosmos, Uncover Mysteries | Your Space Journey Begins Here ðŸŒŸ
+                        ðŸ“¸ Visualize Planets, Witness Wonders | Join the Galactic Revolution ðŸŒ
+                        ðŸ’¬ Learn, Orbit, Inspire | Your Universe, Your Curiosity, Your Adventure ðŸš€
+                        <br><br><br>
+                        <span class="tech-title">Tech Stack</span>
+                        <div class="tech-stack">
+                          <p class="tools">HTML</p>
+                          <p class="tools">CSS</p>
+                        </div>
+                    </p>
+                    <div class="box-icon">
+                        <a href="https://solar-system-so.netlify.app/" target="_blank">
+                            <img src="Social/Chrome.png" alt="Chrome">
+                        </a>
+                        <a href="https://github.com/Sourabhkush123/Solar-System" target="_blank">
+                            <img src="Social/Github-B.png" alt="Github">
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <div class="box col-md-5 col-11">
+                    <div class="icon">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <div class="topic">To-Do-List</div>
+                    <a href="https://to-do-list-rj.netlify.app/" target="_blank">
+                        <div class="prj-img-flw">
+                            <img class="project-img" src="Project Images/To-Do-List.jpg" alt=".">
+                        </div>
+                    </a>
+                    <p class="txt2">
+                        ðŸ“ To-Do List Application | Plan, Prioritize, Achieve ðŸŒ
+                        âœ… Organize Tasks, Boost Productivity | Your Daily Planner Starts Here ðŸŒŸ
+                        ðŸ“¸ Track Goals, Celebrate Progress | Join the Productivity Movement ðŸŒ
+                        ðŸ’¬ Focus, Finish, Flourish | Your Time, Your Tasks, Your Success ðŸš€
+                        <br><br><br>
+                        <span class="tech-title">Tech Stack</span>
+                        <div class="tech-stack">
+                          <p class="tools">HTML</p>
+                          <p class="tools">CSS</p>
+                        </div>
+                    </p>
+                    <div class="box-icon">
+                        <a href="#" target="_blank">
+                            <img src="Social/Chrome.png" alt="Chrome">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="Social/Github-B.png" alt="Github">
+                        </a>
+                    </div>
+                </div>
+
+                
+                <div class="box col-md-5 col-11">
+                    <div class="icon">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <div class="topic">Responsive-Slider</div>
+                    <a href="https://slider-responsive.netlify.app/" target="_blank">
+                        <div class="prj-img-flw">
+                            <img class="project-img" src="Project Images/Slider.jpg" alt=".">
+                        </div>
+                    </a>
+                    <p class="txt2">
+                        ðŸŽ  Responsive Slider Application | Slide, Style, Shine ðŸŒ
+                        ðŸ“² Adaptive Design, Smooth Experience | Your Visual Showcase Starts Here ðŸŒŸ
+                        ðŸ“¸ Display Images, Tell Stories | Join the Responsive Revolution ðŸŒ
+                        ðŸ’¬ Swipe, Scroll, Impress | Your Content, Your Flow, Your Way ðŸš€
+                        <br><br><br>
+                        <span class="tech-title">Tech Stack</span>
+                        <div class="tech-stack">
+                          <p class="tools">HTML</p>
+                          <p class="tools">CSS</p>
+                        </div>
+                    </p>
+                    <div class="box-icon">
+                        <a href="https://3d-image-slider-so.netlify.app/" target="_blank">
+                            <img src="Social/Chrome.png" alt="Chrome">
+                        </a>
+                        <a href="https://github.com/Sourabhkush123/3D-image-slider" target="_blank">
+                            <img src="Social/Github-B.png" alt="Github">
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="box col-md-5 col-11">
+                    <div class="icon">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <div class="topic">Analog Clock</div>
+                    <a href="https://analog-clockjs-so.netlify.app/" target="_blank">
+                        <div class="prj-img-flw">
+                            <img class="project-img" src="Project Images/Clock.png" alt=".">
+                        </div>
+                    </a>
+                    <p class="txt2">
+                        ðŸ•°ï¸ Analog Clock Application | Tick, Track, Timeless ðŸŒ
+                        â³ Classic Look, Modern Touch | Your Timekeeping Starts Here ðŸŒŸ
+                        ðŸ“¸ Watch Time Move, Feel the Rhythm | Join the Clockwork Revolution ðŸŒ
+                        ðŸ’¬ View, Sync, Stay On Time | Your Clock, Your Style, Your Moment ðŸš€
+                        <br><br><br>
+                        <span class="tech-title">Tech Stack</span>
+                        <div class="tech-stack">
+                          <p class="tools">HTML</p>
+                          <p class="tools">CSS</p>
+                        </div>
+                    </p>
+                    <div class="box-icon">
+                        <a href="https://analog-clockjs-so.netlify.app/" target="_blank">
+                            <img src="Social/Chrome.png" alt="Chrome">
+                        </a>
+                        <a href="https://github.com/Sourabhkush123/Analog-Clockjs" target="_blank">
+                            <img src="Social/Github-B.png" alt="Github">
+                        </a>
+                    </div>
+                </div>
+
+                
+
+            </div>
+          </div>
+      </section>
+
+      <!--Contact section starts here-->
+      <section id="cntct" class="full-height px-lg-5">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-8 pb-4">
+              <h6 class="text-brand">CONTACT - ME</h6>
+              <h1>Interested in working together ? let's talk</h1>
+            </div>
+            <div class="col-lg-11">
+              <div class="cf-card">
+                <div class="cf-panel">
+                  <form id="contact-form" novalidate>
+                    <input type="text" name="_honey" class="cf-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+                    <div class="cf-grid">
+                      <label class="cf-field">
+                        <span class="cf-label">Full name *</span>
+                        <span class="cf-input"><i class="fa-solid fa-user"></i><input type="text" name="name" maxlength="80" placeholder="Your name" autocomplete="name"></span>
+                        <small class="cf-error"></small>
+                      </label>
+                      <label class="cf-field">
+                        <span class="cf-label">Email *</span>
+                        <span class="cf-input"><i class="fa-solid fa-envelope"></i><input type="email" name="email" maxlength="120" placeholder="you@example.com" autocomplete="email"></span>
+                        <small class="cf-error"></small>
+                      </label>
+                      <label class="cf-field">
+                        <span class="cf-label">Phone (optional)</span>
+                        <span class="cf-input"><i class="fa-solid fa-phone"></i><input type="tel" name="phone" maxlength="20" placeholder="+91 98765 43210" autocomplete="tel"></span>
+                        <small class="cf-error"></small>
+                      </label>
+                      <label class="cf-field">
+                        <span class="cf-label">Company (optional)</span>
+                        <span class="cf-input"><i class="fa-solid fa-building"></i><input type="text" name="company" maxlength="80" placeholder="Your company" autocomplete="organization"></span>
+                        <small class="cf-error"></small>
+                      </label>
+                      <label class="cf-field cf-wide">
+                        <span class="cf-label">I'm reaching out about</span>
+                        <span class="cf-input">
+                          <i class="fa-solid fa-tag"></i>
+                          <select name="inquiry_type">
+                            <option>Job opportunity</option>
+                            <option>Freelance / project work</option>
+                            <option>Collaboration</option>
+                            <option>Mentorship / guidance</option>
+                            <option>Something else</option>
+                          </select>
+                        </span>
+                      </label>
+                      <label class="cf-field cf-wide">
+                        <span class="cf-label">Subject *</span>
+                        <span class="cf-input"><i class="fa-solid fa-pen"></i><input type="text" name="subject" maxlength="120" placeholder="What is this about?"></span>
+                        <small class="cf-error"></small>
+                      </label>
+                      <label class="cf-field cf-wide">
+                        <span class="cf-label">Message * <em class="cf-count">0 / 1000</em></span>
+                        <span class="cf-input cf-area"><textarea name="message" rows="5" maxlength="1000" placeholder="Tell me about the role or project..."></textarea></span>
+                        <small class="cf-error"></small>
+                      </label>
+                    </div>
+                    <button type="submit" class="cf-submit">
+                      <span class="cf-btn-label"><i class="fa-solid fa-paper-plane"></i> Send message</span>
+                      <span class="cf-spinner" aria-hidden="true"></span>
+                    </button>
+                    <div class="cf-status" role="status" aria-live="polite"></div>
+                  </form>
+
+                  <div class="cf-success" hidden>
+                    <svg class="cf-check" viewBox="0 0 52 52" aria-hidden="true">
+                      <circle cx="26" cy="26" r="24"></circle>
+                      <path d="M14 27 l8 8 l16 -17"></path>
+                    </svg>
+                    <h3>Message sent!</h3>
+                    <div class="cf-lead" id="cf-success-text"></div>
+                    <button type="button" class="cf-submit cf-again">Send another message</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Contact section ends here-->
+
+      <section id="contact">
+            <br><br>
+                <p style="text-align:center;">
+            Thank you for visiting my portfolio. If you would like to get in touch, you can reach me at :
+            </p>
+            <div class="social">
+                    <a href="mailto:sourabhkushwaha0701@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <img style="margin-top: 27px;" src="Social/Gmail.png" alt="Gmail">
+                    </a>
+                    <a href="https://www.linkedin.com/in/sourabh-kushwaha-5807a725a/?isSelfProfile=true" target="_blank">
+                        <img src="Social/Linkedin.png" alt="Linkedin">
+                    </a>
+                    <a href="https://github.com/Sourabhkush123" target="_blank">
+                        <img src="Social/Github.png" alt="Github">
+                    </a>
+            </div>
+            <div class="cta-row share-row">
+                <a class="cta-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2FSourabh-kushwaha-portfolio.netlify.app%2F" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i> Share on LinkedIn
+                </a>
+            </div>
+
+        </section>
+    </main><br><br>
+    <div class="footer-container">
+        <footer>
+        <p id="footer-text">&copy; 2026 All rights reserved by Sourabh Kushwaha. </p>
+        <div class="footer-actions">
+          <a class="footer-icon" href="https://www.linkedin.com/in/sourabh-kushwaha-5807a725a/?isSelfProfile=true" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a class="footer-icon" href="https://github.com/Sourabhkush123" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <button class="footer-icon" id="footer-copy-email" type="button" aria-label="Copy email address" title="Copy email"><i class="fa-solid fa-envelope"></i></button>
+          <button class="footer-icon" id="footer-top" type="button" aria-label="Back to top" title="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+          <span id="footer-status" class="footer-status" aria-live="polite"></span>
+        </div>
+        <p class="footer-dev"><i class="fa-solid fa-code" aria-hidden="true"></i> Developed By: <strong>Sourabh Kushwaha</strong></p>
+        </footer>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+  <script src="Script/script.js"></script>
+  <script src="Script/animations.js"></script>
+  <script src="Script/reveal.js"></script>
+  <script src="Script/features.js"></script>
+  <script src="Script/skill-orbit.js"></script>
+  <script src="Script/ai-lab.js"></script>
+  <script src="Script/ai-extra.js"></script>
+  <script src="Script/contact.js"></script>
+</body>
+</html>
+
+
+ 

@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
+
+ :root {
+  --color-body: #b6cbce;
+  --color-heading: #eef3db;
+  --color-base: #3c4eb6;
+  --color-background: #0802a3;
+  --color-brand:#FFD93D;
+  --color-brand2: #f6fa70;
+}
+.full-height {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-bottom: 3px solid var(--color-base);
+}
+
+.btn {
+  padding: 12px 28px;
+  font-weight: 700;
+  width: 100%;
+}
+
+.btn-brand {
+  background-color: var(--color-brand);
+  border-color: var(--color-brand);
+  color: var(--color-base);
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+  background-color: var(--color-brand2);
+  color: var(--color-base);
+  border-color: var(--color-brand2);
+}
+
+.link-custom {
+  font-weight: 700;
+  position: relative;
+}
+
+.text-brand {
+  color: var(--color-brand);
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.bg-base {
+  background-color: var(--color-base);
+}
+
+.shadow-effect:hover {
+  box-shadow: -6px 6px 0 0 var(--color-brand);
+}
+
+.iconbox {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  background-color: var(--color-brand);
+  color: var(--color-base);
+}
+
+.card-custom .card-custom-img {
+  overflow: hidden;
+}
+.row div input {
+  margin-bottom: 10px;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.row div textarea {
+  background: transparent;
+  outline: none;
+  font-size: 20px;
+}
+.row div input:focus {
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  outline: none;
+  border: 3px solid var(--color-brand);
+}
+
+.row div textarea:focus {
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  outline: none;
+  border: 3px solid var(--color-brand);
+}
+
+.row div input::placeholder {
+  color: white;
+}
+.row div textarea::placeholder {
+  color: white;
+}
+
+.social-icon a i {
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+.social-icon a {
+  padding: 18px;
+  margin: 3px;
+  background-color: var(--color-base);
+  border-radius: 100%;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.col-auto {
+  font-size: 1.3rem;
+}
