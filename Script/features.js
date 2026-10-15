@@ -112,7 +112,7 @@
       repoGrid.appendChild(note);
     };
     const loadRepos = () => {
-      fetch("https://api.github.com/users/Rajneesh-1234/repos?sort=updated&per_page=6")
+      fetch("https://github.com/Sourabhkush123?tab=repositories?sort=updated&per_page=6")
         .then((response) => (response.ok ? response.json() : Promise.reject(new Error(response.status))))
         .then((repos) => {
           const list = repos.filter((repo) => !repo.fork);
@@ -160,7 +160,7 @@
   const copyEmail = $("#footer-copy-email");
   if (copyEmail) {
     copyEmail.addEventListener("click", () => {
-      const email = "rajnishkushwaha3757@gmail.com";
+      const email = "sourabhkushwaha0701@gmail.com";
       if (!navigator.clipboard) {
         window.location.href = "mailto:" + email;
         return;
@@ -247,44 +247,44 @@
 
   /* AI chat assistant: local keyword retrieval over resume facts */
   const KB = [
-    { keys: ["hi", "hello", "hey", "hii", "namaste"], answer: "Hi! I'm Rajneesh's portfolio assistant. Ask me about his experience, projects, skills, education or how to contact him." },
-    { keys: ["who", "about", "introduce", "yourself", "rajneesh", "summary", "profile"], answer: "Rajneesh Kushwaha is a Full-Stack Java Developer and B.Tech (Artificial Intelligence and Machine Learning) graduate with experience at HCLTech and Siemens. He works with Java, Spring Boot, React, Python and Generative AI." },
-    { keys: ["experience", "work", "worked", "job", "career", "company", "companies", "employment", "employer"], answer: "Rajneesh has worked at two companies: HCLTech (Automation Engineer on the LIMS/ESP project) and Siemens (currently building Generative AI projects: CRISP AI and Personal AI Manager). He also completed a Java Developer internship at Sharma Computer Academy (Aug-Oct 2025)." },
-    { keys: ["hcl", "hcltech", "lims", "esp", "webdriverio", "webdriver", "automation engineer"], answer: "At HCLTech he worked as an Automation Engineer on the LIMS/ESP project, using TypeScript, WebdriverIO, the Axios library and Postman." },
-    { keys: ["siemens", "crisp", "personal ai", "current", "currently", "mcp"], answer: "At Siemens he is currently working on two projects. CRISP AI uses Python, Generative AI, RAG, Streamlit and a vector database. Personal AI Manager uses the same stack plus an MCP service, a FastAPI backend and an HTML, CSS and JavaScript frontend." },
+    { keys: ["hi", "hello", "hey", "hii", "namaste"], answer: "Hi! I'm Sourabh portfolio assistant. Ask me about his experience, projects, skills, education or how to contact him." },
+    { keys: ["who", "about", "introduce", "yourself", "Sourabh", "summary", "profile"], answer: "Sourabh Kushwaha is a Full-Stack Java Developer and B.Tech (Computer Science Engineering Learning) graduate with experience at Shrma Computer Academy and Pankaj Sir Academy. He works with Java, Spring Boot, React, Python and Generative AI." },
+    { keys: ["experience", "work", "worked", "job", "career", "company", "companies", "employment", "employer"], answer: "Sourabh has worked at two companies: Shrma Computer Academy (Automation Engineer on the LIMS/ESP project) and Pankaj Sir Academy (currently building Generative AI projects: CRISP AI and Personal AI Manager). He also completed a Java Developer internship at Sharma Computer Academy (Aug-Oct 2025)." },
+    { keys: ["SCA", "Shrma Computer Academy", "lims", "esp", "webdriverio", "webdriver", "automation engineer"], answer: "At Shrma Computer Academy he worked as an Automation Engineer on the LIMS/ESP project, using TypeScript, WebdriverIO, the Axios library and Postman." },
+    { keys: ["Pankaj Sir Academy", "crisp", "personal ai", "current", "currently", "mcp"], answer: "At Pankaj Sir Academy he is currently working on two projects. CRISP AI uses Python, Generative AI, RAG, Streamlit and a vector database. Personal AI Manager uses the same stack plus an MCP service, a FastAPI backend and an HTML, CSS and JavaScript frontend." },
     { keys: ["project", "projects", "built", "portfolio"], answer: "Featured projects: HireSense (AI resume screening), GadgetHub (e-commerce), BlogHub (blogging platform), Online Voting, Swift Cart (e-commerce with React and Spring Boot) and Krishi Mandal (farming application). The Projects section also has 15+ front-end apps hosted on Netlify." },
     { keys: ["swift", "swiftcart", "swift cart"], answer: "Swift Cart is an e-commerce application built with Spring, Spring Boot, REST API, React and MySQL." },
     { keys: ["krishi", "mandal", "farming", "farmer"], answer: "Krishi Mandal is a farming application built with Spring, Spring Boot, React and REST API." },
-    { keys: ["hiresense", "hiresence", "resume screening"], answer: "HireSense is an AI-driven resume screening platform. Rajneesh contributed to it during his internship, building backend services with Advanced Java, Servlets, JDBC and MySQL." },
+    { keys: ["hiresense", "hiresence", "resume screening"], answer: "HireSense is an AI-driven resume screening platform. Sourabh contributed to it during his internship, building backend services with Advanced Java, Servlets, JDBC and MySQL." },
     { keys: ["gadgethub", "gadget", "ecommerce", "e-commerce"], answer: "GadgetHub is an e-commerce application built with Java, JEE, JDBC, JSP, MySQL and Bootstrap, with secure payments, order tracking, reviews and recommendations." },
     { keys: ["bloghub", "blog", "blogging"], answer: "BlogHub is a full-stack blogging platform built with Spring Boot, Spring REST API, MySQL and Bootstrap, with authentication, blog management and comments." },
     { keys: ["voting", "vote", "election"], answer: "The Online Voting Application uses Spring Boot, Spring Data JPA, REST API and MySQL, with secure voter authentication, real-time vote tracking and result generation." },
-    { keys: ["generative", "genai", "rag", "llm", "vector", "fastapi", "streamlit", "ai", "artificial intelligence"], answer: "Rajneesh builds Generative AI applications with Python: RAG over vector databases, Streamlit and FastAPI interfaces and an MCP service. He applies this at Siemens in CRISP AI and Personal AI Manager." },
+    { keys: ["generative", "genai", "rag", "llm", "vector", "fastapi", "streamlit", "ai", "artificial intelligence"], answer: "Sourabh builds Generative AI applications with Python: RAG over vector databases, Streamlit and FastAPI interfaces and an MCP service. He applies this at Pankaj Sir Academy in CRISP AI and Personal AI Manager." },
     { keys: ["skill", "skills", "tech", "technology", "technologies", "stack", "language", "languages", "know"], answer: "Core skills: Java, Spring Boot, Spring MVC, Spring Data JPA, REST APIs, Microservices, MySQL, React, JavaScript, TypeScript, Python, Generative AI, and test automation (WebdriverIO, Selenium, TestNG, Postman). See the Skillset section for the full list." },
-    { keys: ["java", "spring", "backend", "boot", "microservices", "api", "apis", "rest"], answer: "On the backend Rajneesh works with Java, Spring Core, Spring Boot, Spring MVC, Spring Data JPA, JDBC, Servlets/JSP, REST APIs, Microservices and MySQL." },
+    { keys: ["java", "spring", "backend", "boot", "microservices", "api", "apis", "rest"], answer: "On the backend Sourabh works with Java, Spring Core, Spring Boot, Spring MVC, Spring Data JPA, JDBC, Servlets/JSP, REST APIs, Microservices and MySQL." },
     { keys: ["frontend", "front-end", "react", "html", "css", "javascript", "typescript", "ui"], answer: "On the frontend he uses HTML, CSS, JavaScript, TypeScript, Bootstrap and React.js." },
     { keys: ["test", "testing", "automation", "selenium", "testng", "junit", "cucumber", "postman", "axios"], answer: "For test automation he uses TypeScript with WebdriverIO, Axios and Postman, plus Selenium, TestNG, JUnit and Cucumber." },
-    { keys: ["education", "degree", "college", "btech", "b.tech", "cgpa", "study", "studied", "university", "school", "graduate"], answer: "B.Tech in Artificial Intelligence and Machine Learning (2022-2026) from Technocrats Institute of Technology and Science, Bhopal, with a CGPA of 8.44/10." },
+    { keys: ["education", "degree", "college", "btech", "b.tech", "cgpa", "study", "studied", "university", "school", "graduate"], answer: "B.Tech in Computer Science Engineering Learning (2022-2026) from Vidhyapeeth Institute of Technology and Science, Bhopal, with a CGPA of 7.80/10." },
     { keys: ["certificate", "certification", "certifications", "certified", "ibm", "servicenow"], answer: "He is an IBM-certified Java Fundamentals professional and is ServiceNow certified. The ServiceNow certificate is linked in the Education and Certification section." },
     { keys: ["achievement", "achievements", "coding", "leetcode", "codechef", "competition", "competitions", "problems", "dsa", "won", "winner", "hackerrank"], answer: "He has solved 500+ algorithmic problems across LeetCode, CodeChef, HackerRank and GeeksforGeeks, and won 15 first places and 5 second places in coding and web development competitions." },
     { keys: ["intern", "internship", "sca", "sharma"], answer: "He was a Java Developer Intern at Sharma Computer Academy (Aug-Oct 2025), contributing to HireSense with Advanced Java, Servlets, JDBC and MySQL." },
-    { keys: ["contact", "email", "mail", "reach", "hire", "linkedin", "github", "connect", "message"], answer: "You can reach Rajneesh through the Contact section, on LinkedIn or GitHub, or by email at rajnishkushwaha3757@gmail.com." },
+    { keys: ["contact", "email", "mail", "reach", "hire", "linkedin", "github", "connect", "message"], answer: "You can reach Sourabh through the Contact section, on LinkedIn or GitHub, or by email at sourabhkushwaha0701@gmail.com" },
     { keys: ["resume", "cv", "download"], answer: "Use the Download Resume button at the top of the page, or the Resume link in the navigation bar." },
-    { keys: ["thanks", "thank", "bye"], answer: "You're welcome! Feel free to ask anything else about Rajneesh." },
+    { keys: ["thanks", "thank", "bye"], answer: "You're welcome! Feel free to ask anything else about Sourabh." },
   ];
 
-  const FALLBACK = "I can answer questions about Rajneesh's experience, projects, skills, education, certifications and contact details. Try one of the suggestions below.";
+  const FALLBACK = "I can answer questions about Sourabh experience, projects, skills, education, certifications and contact details. Try one of the suggestions below.";
   const SUGGESTIONS = ["Experience", "Projects", "Skills", "Generative AI", "Education", "Contact"];
   window.PORTFOLIO_KB = KB;
   window.PORTFOLIO_FALLBACK = FALLBACK;
   const NEXT = {
-    experience: ["HCLTech", "Siemens", "Internship"],
-    hcl: ["Siemens", "Skills", "Projects"],
-    siemens: ["Generative AI", "HCLTech", "Projects"],
+    experience: ["Shrma Computer Academy", "Pankaj Sir Academy", "Internship"],
+    SCA: ["Pankaj Sir Academy", "Skills", "Projects"],
+    Pankaj Sir Academy: ["Generative AI", "Shrma Computer Academy", "Projects"],
     project: ["Swift Cart", "Krishi Mandal", "HireSense", "GadgetHub"],
     swift: ["Krishi Mandal", "Backend", "Frontend"],
     krishi: ["Swift Cart", "Backend", "Frontend"],
-    generative: ["Siemens", "Projects", "Skills"],
+    generative: ["Pankaj Sir Academy", "Projects", "Skills"],
     skill: ["Backend", "Frontend", "Test automation", "Generative AI"],
     java: ["Frontend", "Projects", "Experience"],
     education: ["Certifications", "Achievements", "Experience"],
@@ -639,23 +639,23 @@
       if (!skills.length) skills = ["Java", "Spring Framework", "REST APIs", "Microservices", "Generative AI"];
 
       let highlight =
-        "I build full-stack applications with Spring Boot, REST APIs, React and MySQL, including Swift Cart and Krishi Mandal, and I have worked at HCLTech and Siemens.";
+        "I build full-stack applications with Spring Boot, REST APIs, React and MySQL, including Swift Cart and Krishi Mandal, and I have worked at Shrma Computer Academy and Pankaj Sir Academy.";
       if (/\b(ai|ml|genai|generative|llm|machine learning|rag)\b/.test(role.toLowerCase())) {
         highlight =
-          "At Siemens I am building Generative AI applications with Python, RAG, vector databases, FastAPI and an MCP service (CRISP AI and Personal AI Manager).";
+          "At Pankaj Sir Academy I am building Generative AI applications with Python, RAG, vector databases, FastAPI and an MCP service (CRISP AI and Personal AI Manager).";
       } else if (/\b(qa|test|testing|automation|sdet)\b/.test(role.toLowerCase())) {
         highlight =
-          "At HCLTech I worked as an Automation Engineer on the LIMS/ESP project using TypeScript, WebdriverIO, Axios and Postman.";
+          "At Shrma Computer Academy I worked as an Automation Engineer on the LIMS/ESP project using TypeScript, WebdriverIO, Axios and Postman.";
       }
 
       const pitch =
         "Hi " + (company ? company + " team" : "there") + ",\n\n" +
-        "I'm Rajneesh Kushwaha, a Full-Stack Java Developer with a B.Tech in Artificial Intelligence and Machine Learning, and I'm excited about the " +
+        "I'm Sourabh Kushwaha, a Full-Stack Java Developer with a B.Tech in Computer Science Engineering Learning, and I'm excited about the " +
         role + " opportunity" + (company ? " at " + company : "") + ".\n\n" +
         highlight + "\n\n" +
         "Relevant strengths: " + skills.join(", ") + ".\n\n" +
-        "I'd welcome the chance to discuss how I can contribute. You can reach me at rajnishkushwaha3757@gmail.com or linkedin.com/in/rajneesh-kushwaha-02a787276.\n\n" +
-        "Best regards,\nRajneesh Kushwaha";
+        "I'd welcome the chance to discuss how I can contribute. You can reach me at sourabhkushwaha0701@gmail.com or linkedin.com/in/Sourabh-kushwaha-02a787276.\n\n" +
+        "Best regards,\nSourabh Kushwaha";
 
       output.hidden = false;
       copyBtn.hidden = false;
@@ -695,7 +695,7 @@
 
     const COMMANDS = [
       { label: "About", icon: "fa-solid fa-user", hint: "Section", words: "home top intro profile", run: () => window.scrollTo({ top: 0, behavior: "smooth" }) },
-      { label: "Experience", icon: "fa-solid fa-briefcase", hint: "Section", words: "hcltech siemens work career crisp lims", run: goTo("#experience") },
+      { label: "Experience", icon: "fa-solid fa-briefcase", hint: "Section", words: "Shrma Computer Academy Pankaj Sir Academy work career crisp lims", run: goTo("#experience") },
       { label: "Education & Certification", icon: "fa-solid fa-graduation-cap", hint: "Section", words: "btech ibm servicenow degree cgpa", run: goTo("#education") },
       { label: "Skillset", icon: "fa-solid fa-layer-group", hint: "Section", words: "java spring react python skills technologies", run: goTo("#skillset") },
       { label: "Featured Projects", icon: "fa-solid fa-diagram-project", hint: "Section", words: "swift cart krishi hiresense gadgethub bloghub voting", run: goTo("#featured") },
@@ -713,10 +713,10 @@
       { label: "Ask the AI assistant", icon: "fa-solid fa-robot", hint: "AI tool", words: "chat question voice", run: () => panel && panel.hidden && openChat() },
       { label: "Play auto showcase", icon: "fa-solid fa-play", hint: "Action", words: "record video scroll tour", run: () => showcaseBtn && showcaseBtn.click() },
       { label: "Change theme", icon: "fa-solid fa-palette", hint: "Action", words: "colour color", run: () => $("#changeTheme").click() },
-      { label: "Download resume", icon: "fa-solid fa-download", hint: "Link", words: "cv pdf", run: open("Skillset/RAJNEESH%20KUSHWAHA%20RESUME-1.pdf") },
-      { label: "LinkedIn profile", icon: "fa-brands fa-linkedin", hint: "Link", words: "connect", run: open("https://www.linkedin.com/in/rajneesh-kushwaha-02a787276") },
-      { label: "GitHub profile", icon: "fa-brands fa-github", hint: "Link", words: "code repositories", run: open("https://github.com/Rajneesh-1234") },
-      { label: "ServiceNow certificate", icon: "fa-solid fa-award", hint: "Link", words: "certification", run: open("https://github.com/Rajneesh-1234/SERVICENOW-CERTIFICATE") },
+      { label: "Download resume", icon: "fa-solid fa-download", hint: "Link", words: "cv pdf", run: open("Skillset/Sourabh%20KUSHWAHA%20RESUME-1.pdf") },
+      { label: "LinkedIn profile", icon: "fa-brands fa-linkedin", hint: "Link", words: "connect", run: open("https://www.linkedin.com/in/Sourabh-kushwaha-02a787276") },
+      { label: "GitHub profile", icon: "fa-brands fa-github", hint: "Link", words: "code repositories", run: open("https://github.com/Sourabh-1234") },
+      { label: "ServiceNow certificate", icon: "fa-solid fa-award", hint: "Link", words: "certification", run: open("https://github.com/Sourabh-1234/SERVICENOW-CERTIFICATE") },
     ];
 
     let shown = [];

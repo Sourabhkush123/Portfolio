@@ -34,8 +34,16 @@ header {
   inset: -14px;
   border-radius: 50%;
   background: conic-gradient(#00ddff, #ff00d4, #00ddff);
-  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 4px), #000 calc(100% - 4px));
-  mask: radial-gradient(farthest-side, transparent calc(100% - 4px), #000 calc(100% - 4px));
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    transparent calc(100% - 4px),
+    #000 calc(100% - 4px)
+  );
+  mask: radial-gradient(
+    farthest-side,
+    transparent calc(100% - 4px),
+    #000 calc(100% - 4px)
+  );
   animation: ring-spin 6s linear infinite;
   pointer-events: none;
 }
@@ -92,7 +100,11 @@ header {
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: radial-gradient(260px circle at var(--mx, 50%) var(--my, 50%), rgba(255, 255, 255, 0.22), transparent 70%);
+  background: radial-gradient(
+    260px circle at var(--mx, 50%) var(--my, 50%),
+    rgba(255, 255, 255, 0.22),
+    transparent 70%
+  );
   opacity: 0;
   transition: opacity 300ms ease;
   pointer-events: none;
@@ -117,8 +129,15 @@ header {
   inset: -2px;
   padding: 2px;
   border-radius: inherit;
-  background: conic-gradient(from var(--angle), transparent 0 72%, #fff 90%, transparent);
-  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  background: conic-gradient(
+    from var(--angle),
+    transparent 0 72%,
+    #fff 90%,
+    transparent
+  );
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   animation: border-sweep 5s linear infinite;
@@ -161,7 +180,6 @@ header {
     --angle: 360deg;
   }
 }
-
 
 @keyframes ring-spin {
   to {
@@ -213,7 +231,10 @@ header {
   color: #fff;
   font-weight: 700;
   text-decoration: none;
-  transition: background 300ms ease, color 300ms ease, box-shadow 300ms ease;
+  transition:
+    background 300ms ease,
+    color 300ms ease,
+    box-shadow 300ms ease;
 }
 
 .cta-btn:hover {
@@ -317,7 +338,9 @@ header {
   border: 2px solid #fff;
   border-radius: 14px;
   background: var(--accent);
-  transition: background 300ms ease, color 300ms ease;
+  transition:
+    background 300ms ease,
+    color 300ms ease;
 }
 
 .tl-card h4 {
@@ -366,7 +389,9 @@ header {
   color: #fff;
   font-weight: 700;
   text-decoration: none;
-  transition: background 300ms ease, color 300ms ease;
+  transition:
+    background 300ms ease,
+    color 300ms ease;
 }
 
 .tl-link:hover {
